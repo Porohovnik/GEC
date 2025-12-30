@@ -1,0 +1,215 @@
+{
+	"name_win":"name_win_",
+	"them_object":{
+		"name_them":"name_them_",
+		"lists":[
+			{
+			"name_list":"name_list_",
+			"types":{
+				"CeText":{
+					"font":"arial.ttf",
+					"color_text":""
+				},
+				"CeInput":{
+					"font":"arial.ttf",
+					"color_text":"",
+					"color_backraund":"",
+					"color_board":""
+					
+				}
+			}
+				
+			}
+		]
+	},
+	"list_object":[
+		{
+		"name":"object_1_1",
+		"list":"list_1",
+		"type":"CeBoxElement",
+
+		"x":0.0,
+		"y":-0.58,
+		"z":0.0,
+		"scale_x":2.0,
+		"scale_y":0.68,
+		"scale_z":1.0,
+
+		"them":"",
+
+
+		"list_object":[
+			{
+			"name":"object_down_veter__1_1_1",
+			"list":"list_1",
+			"type":"CeBoxElement",
+
+			"x":-0.28,
+			"y":-0.2,
+			"z":0.0,
+			"scale_x":0.25,
+			"scale_y":0.18,
+			"scale_z":1.0,
+
+			"them":"",
+		
+			"list_object":[
+				{
+				"name":"object_down_veter_0",
+				"list":"list_1",
+				"type":"CeBottom",
+				
+				"x":-0.78,
+				"y":3.0,
+				"scale_x":0.1,
+				
+				"them":"",
+				"font":"fonts/verdana.ttf",
+				"text":"Название выбранной метеостанции:"
+				},
+				{
+				"name":"object_down_veter_1",
+				"list":"list_1",
+				"type":"CeInputText",
+				
+				"x":0.065,
+				"y":2.0,
+				"scale_x":1.8,
+				
+				"them":"",
+				"font":"fonts/verdana.ttf",
+				"text":"Введите название метеостанции"
+				},
+				{
+				"name":"object_down_veter_2",
+				"list":"list_1",
+				"type":"CeBottom",
+				
+				"x":-0.78,
+				"y":1.3,
+				"scale_x":0.1,
+				"scale_y":0.6,
+				
+				"them":"",
+				"font":"fonts/verdana.ttf",
+				"text":"Выбор диопазона дат:"
+				},
+				{
+				"name":"object_down_veter_3",
+				"list":"list_1",
+				"type":"CeBottom",
+				
+				"y":0.7,
+				"x":-0.78,
+				"scale_x":0.1,
+				"scale_y":0.6,
+				
+				"them":"",
+				"font":"fonts/verdana.ttf",
+				"text":"От"
+				},
+				{
+				"name":"object_down_veter_4",
+				"list":"list_1",
+				"type":"CeInputText",
+
+				"y":0.7,
+				"x":-0.4,
+				"scale_x":0.55,
+				"scale_y":0.6,
+				
+				"them":"",
+				"font":"fonts/verdana.ttf",
+				"text":"01.01.2000"
+				},
+				{
+				"name":"object_down_veter_5",
+				"list":"list_1",
+				"type":"CeBottom",
+				
+				"y":0.7,
+				"x":0.0,
+				"scale_x":0.1,
+				"scale_y":0.6,
+				
+				"them":"",
+				"font":"fonts/verdana.ttf",
+				"text":"До"
+				},
+				{				
+				"name":"object_down_veter_6",
+				"list":"list_1",
+				"type":"CeInputText",
+
+				"y":0.7,
+				"x":0.38,
+				"scale_x":0.55,
+				"scale_y":0.6,
+				
+				"them":"",
+				"font":"fonts/verdana.ttf",
+				"text":"01.01.2030"
+				},
+				{
+				"name":"object_down_veter_7",
+				"list":"list_1",
+				"type":"CeBottom",
+				
+				"x":-0.55,
+				"y":0.1,
+				"scale_x":0.6,
+				"scale_y":0.6,
+				
+				"them":"",
+				"font":"fonts/verdana.ttf",
+				"text":"Проверить ряд"
+				},
+
+				{
+				"name":"object_down_veter_8",
+				"list":"list_1",
+				"type":"CeBottom",
+				
+				"x":-0.55,
+				"y":-0.5,
+				"scale_x":0.6,
+				"scale_y":0.6,
+				
+				"them":"",
+				"font":"fonts/verdana.ttf",
+				"text":"Востановить ряд"
+				},
+				{
+				"name":"object_down_veter_9",
+				"list":"list_1",
+				"type":"CeBottom",
+				
+				"x":0.2,
+				"y":-0.2,
+				"scale_x":0.8,
+				"scale_y":0.8,
+				
+				"them":"",
+				"font":"fonts/verdana.ttf",
+				"text":"Скачать ряд даных"
+				},
+				{
+				"name":"object_down_veter_10",
+				"list":"list_1",
+				"type":"CeBottom",
+				
+				"x":0.2,
+				"y":-1.1,
+				"scale_x":0.8,
+				"scale_y":0.8,
+				
+				"them":"",
+				"font":"fonts/verdana.ttf",
+				"text":"Загрузить ряд"
+				}
+			]
+			}
+		]
+		}
+    ]	
+}

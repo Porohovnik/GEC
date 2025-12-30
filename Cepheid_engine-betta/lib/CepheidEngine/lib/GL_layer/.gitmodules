@@ -1,0 +1,6 @@
+[submodule "contrib/glew"]
+	path = contrib/glew
+	url = https://github.com/nigels-com/glew
+[submodule "contrib/Tuple-utilities-template-library"]
+	path = contrib/Tuple-utilities-template-library
+	url = https://github.com/Porohovnik/Tuple-utilities-template-library
