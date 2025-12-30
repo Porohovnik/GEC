@@ -1,0 +1,3401 @@
+{
+	"name_win":"name_win_",
+	
+	"list_object":[
+		{
+			"name":"6661111111",
+			"list":"list_1",
+			"type":"CeBottom",
+			
+			"x":-0.3,
+			"y":-10000.8,
+			"z":-0.4,
+			
+			"scale_x":0.4,
+			"scale_y":0.2,
+			
+			"them":"",
+			"font":"fonts/verdana.ttf",
+			"text":" "
+		},
+		{
+			"name":"input_calc_1",
+			"list":"list_1",
+			"type":"CeBoxElement",
+
+			"x":1000.0,
+			"y":0.0,
+			"z":-0.9,
+			"scale_x":1.8,
+			"scale_y":1.7,
+			"scale_z":1.0,
+
+			"them":"",
+			"path_image":"DLC/pictures/jjj1.png",
+
+			"list_object":[
+				{
+					"name":"name_input_calc_1",
+					"list":"list_1",
+					"type":"CeTextField",
+
+					"x":-0.46,
+					"y":0.4,
+					"z":0.0,
+					"scale_x":0.01,
+					"scale_y":0.064,
+					"scale_z":1.0,
+					
+					
+					"them":"",
+					"font":"fonts/verdana.ttf",
+					"text":"Выбор оптимального состава и параметров ГЭК"
+				},
+				{
+					"name":"name_0.0_input_calc_1",
+					"list":"list_1",
+					"type":"CeTextField",
+
+					"x":-0.46,
+					"y":0.34,
+					"z":0.0,
+					"scale_x":0.01,
+					"scale_y":0.04,
+					"scale_z":1.0,
+					
+					
+					"them":"",
+					"font":"fonts/verdana.ttf",
+					"text":"\"ТЭО\" варианта"
+				},
+				{
+					"name":"name_0.1_input_calc_1",
+					"list":"list_1",
+					"type":"CeTextField",
+
+					"x":-0.46,
+					"y":-0.06,
+					"z":0.0,
+					"scale_x":0.01,
+					"scale_y":0.04,
+					"scale_z":1.0,
+					
+					
+					"them":"",
+					"font":"fonts/verdana.ttf",
+					"text":"Ввод параметров"
+				},
+				{
+				
+					"name":"close_input_calc_1",
+					"list":"list_1",
+					"type":"CeBottom",
+
+					"x":0.448,
+					"y":0.42,
+					"z":-0.1,
+					"scale_x":0.06,
+					"scale_y":0.08,
+					"scale_z":1.0,
+					
+					"funs_object_change":[
+						{
+							"type":"change_position",
+							"name_object":"input_calc_1",
+							"type_button":"lift",
+
+							"setting":{
+								"x_repite":-1000.0
+							}		
+						}
+					],
+					
+					"them":"",
+					"font":"fonts/verdana.ttf",
+					"path_image":"DLC/pictures/closed.png",
+					"text":" "
+				},
+				{
+					"name":"input_calc_1_name_parametrs",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"x":-0.38,
+					"y":-0.14,
+					"z":0.0,
+					"scale_x":0.1,
+					"scale_y":0.05,
+					"scale_z":1.0,
+
+					"them":"",
+					"path_image":"DLC/pictures/querty_white.png",
+					
+					"array_setting":{
+						"scale_y_start":1.0,
+						"scale_x_start":0.065,
+						"x_start":-0.5,
+						"y_start":0.45,
+						"x_offset":1.2
+					},
+					
+					"list_object":[
+						{
+							"name":"FEU_N_CALC_0",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Вар"
+						},
+						{
+							"name":"FEU_N_CALC_1",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"ФЭУ"
+						},
+						{
+							"name":"VEU_N_CALC_1",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"ВЭУ"
+						},
+						{
+							"name":"GEU_N_CALC_1",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"ГЭУ"
+						}						
+					]
+				},
+				{
+					"name":"input_calc_1_input_1_parametrs",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"x":-0.35,
+					"y":-0.20,
+					"z":0.1,
+					"scale_x":0.1,
+					"scale_y":0.05,
+					"scale_z":1.0,
+
+					"them":"",
+					"path_image":"DLC/pictures/querty_white.png",
+					
+					"array_setting":{
+						"scale_y_start":1.0,
+						"scale_x_start":1.0,
+						"x_start":-0.5,
+						"y_start":0.45,
+						"z_start":-0.1,
+						"x_offset":1.2
+					},
+					
+					"list_object":[
+						{
+							"name":"FEU_N_CALC_0_input_1",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":" 1"
+						},
+						{
+							"name":"FEU_N_CALC_1_input_1",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface_cout"
+								}
+							],
+														
+							"namber_setting":{
+								"min":0.0,
+								"max":1000000.0,
+								"accurate":0
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000"
+						},
+						{
+							"name":"VEU_N_CALC_1_input_1",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface_cout"
+								}
+							],
+														
+							"namber_setting":{
+								"min":0.0,
+								"max":1000000.0,
+								"accurate":0
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000"
+						},
+						{
+							"name":"GEU_N_CALC_1_input_1",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface_cout"
+								}
+							],
+														
+							"namber_setting":{
+								"min":0.0,
+								"max":1000000.0,
+								"accurate":0
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000"
+						}						
+					]
+				},
+				{
+					"name":"input_calc_1_input_2_parametrs",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"x":-0.35,
+					"y":-0.26,
+					"z":0.1,
+					"scale_x":0.1,
+					"scale_y":0.05,
+					"scale_z":1.0,
+
+					"them":"",
+					"path_image":"DLC/pictures/querty_white.png",
+					
+					"array_setting":{
+						"scale_y_start":1.0,
+						"scale_x_start":1.0,
+						"x_start":-0.5,
+						"y_start":0.45,
+						"z_start":-0.1,
+						"x_offset":1.2
+					},
+					
+					"list_object":[
+						{
+							"name":"FEU_N_CALC_0_input_2",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":" 2"
+						},
+						{
+							"name":"FEU_N_CALC_1_input_2",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface_cout"
+								}
+							],
+														
+							"namber_setting":{
+								"min":0.0,
+								"max":1000000.0,
+								"accurate":0
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000"
+						},
+						{
+							"name":"VEU_N_CALC_1_input_2",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface_cout"
+								}
+							],
+														
+							"namber_setting":{
+								"min":0.0,
+								"max":1000000.0,
+								"accurate":0
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000"
+						},
+						{
+							"name":"GEU_N_CALC_1_input_2",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface_cout"
+								}
+							],
+														
+							"namber_setting":{
+								"min":0.0,
+								"max":1000000.0,
+								"accurate":0
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000"
+						}						
+					]
+				},
+				{
+					"name":"input_calc_1_input_3_parametrs",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"x":-0.35,
+					"y":-0.32,
+					"z":0.1,
+					"scale_x":0.1,
+					"scale_y":0.05,
+					"scale_z":1.0,
+
+					"them":"",
+					"path_image":"DLC/pictures/querty_white.png",
+					
+					"array_setting":{
+						"scale_y_start":1.0,
+						"scale_x_start":1.0,
+						"x_start":-0.5,
+						"y_start":0.45,
+						"z_start":-0.1,
+						"x_offset":1.2
+					},
+					
+					"list_object":[
+						{
+							"name":"FEU_N_CALC_0_input_3",
+							"list":"list_1",
+							"type":"CeTextField",
+														
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":" 3"
+						},
+						{
+							"name":"FEU_N_CALC_1_input_3",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface_cout"
+								}
+							],
+														
+							"namber_setting":{
+								"min":0.0,
+								"max":1000000.0,
+								"accurate":0
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000"
+						},
+						{
+							"name":"VEU_N_CALC_1_input_3",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface_cout"
+								}
+							],
+														
+							"namber_setting":{
+								"min":0.0,
+								"max":1000000.0,
+								"accurate":0
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000"
+						},
+						{
+							"name":"GEU_N_CALC_1_input_3",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface_cout"
+								}
+							],
+														
+							"namber_setting":{
+								"min":0.0,
+								"max":1000000.0,
+								"accurate":0
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000"
+						}						
+					]
+				},
+				{
+					"name":"input_calc_1_input_4_parametrs",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"x":-0.35,
+					"y":-0.38,
+					"z":0.1,
+					"scale_x":0.1,
+					"scale_y":0.05,
+					"scale_z":1.0,
+
+					"them":"",
+					"path_image":"DLC/pictures/querty_white.png",
+					
+					"array_setting":{
+						"scale_y_start":1.0,
+						"scale_x_start":1.0,
+						"x_start":-0.5,
+						"y_start":0.45,
+						"z_start":-0.1,
+						"x_offset":1.2
+					},
+					
+					"list_object":[
+						{
+							"name":"FEU_N_CALC_0_input_4",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":" 4"
+						},
+						{
+							"name":"FEU_N_CALC_1_input_4",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface_cout"
+								}
+							],
+														
+							"namber_setting":{
+								"min":0.0,
+								"max":1000000.0,
+								"accurate":0
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000"
+						},
+						{
+							"name":"VEU_N_CALC_1_input_4",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface_cout"
+								}
+							],
+														
+							"namber_setting":{
+								"min":0.0,
+								"max":1000000.0,
+								"accurate":0
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000"
+						},
+						{
+							"name":"GEU_N_CALC_1_input_4",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface_cout"
+								}
+							],
+														
+							"namber_setting":{
+								"min":0.0,
+								"max":1000000.0,
+								"accurate":0
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000"
+						}						
+					]
+				},
+				{
+					"name":"input_calc_1_input_5_parametrs",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"x":-0.35,
+					"y":-0.44,
+					"z":0.1,
+					"scale_x":0.1,
+					"scale_y":0.05,
+					"scale_z":1.0,
+
+					"them":"",
+					"path_image":"DLC/pictures/querty_white.png",
+					
+					"array_setting":{
+						"scale_y_start":1.0,
+						"scale_x_start":1.0,
+						"x_start":-0.5,
+						"y_start":0.45,
+						"z_start":-0.1,
+						"x_offset":1.2
+					},
+					
+					"list_object":[
+						{
+							"name":"FEU_N_CALC_0_input_5",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":" 5"
+						},
+						{
+							"name":"FEU_N_CALC_1_input_5",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface_cout"
+								}
+							],
+														
+							"namber_setting":{
+								"min":0.0,
+								"max":1000000.0,
+								"accurate":0
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000"
+						},
+						{
+							"name":"VEU_N_CALC_1_input_5",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface_cout"
+								}
+							],
+														
+							"namber_setting":{
+								"min":0.0,
+								"max":1000000.0,
+								"accurate":0
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000"
+						},
+						{
+							"name":"GEU_N_CALC_1_input_5",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface_cout"
+								}
+							],
+														
+							"namber_setting":{
+								"min":0.0,
+								"max":1000000.0,
+								"accurate":0
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000"
+						}						
+					]
+				},
+				{
+					"name":"input_calc_1_tabl_param_0",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"x":0.0,
+					"y":0.27,
+					"z":0.0,
+					"scale_x":0.5,
+					"scale_y":0.045,
+					"scale_z":1.0,
+
+					"them":"",
+					"path_image":"DLC/pictures/querty_white.png",
+					
+					
+					"list_object":[
+						{
+							"name":"tabl_0_1_line_-1_gorizont",
+							"list":"list_1",
+							"type":"CeBoxElement",
+							
+							"x":0.0,
+							"y":0.5,
+							
+							"scale_x":1.9,
+							"scale_y":0.072,
+							
+							"path_image":"DLC/pictures/black_texture.png",
+							"them":""
+						},
+						{
+							"name":"tabl_0_1_line_0_gorizont",
+							"list":"list_1",
+							"type":"CeBoxElement",
+							
+							"x":0.03,
+							"y":-0.5,
+							
+							"scale_x":1.84,
+							"scale_y":0.072,
+							
+							"path_image":"DLC/pictures/black_texture.png",
+							"them":""
+						},
+						{
+							"name":"tabl_0_1_line_1_gorizont",
+							"list":"list_1",
+							"type":"CeBoxElement",
+							
+							"x":0.00,
+							"y":-1.5,
+							
+							"scale_x":1.9,
+							"scale_y":0.072,
+							
+							"path_image":"DLC/pictures/black_texture.png",
+							"them":""
+						},
+						{
+							"name":"tabl_0_1_line_2_gorizont",
+							"list":"list_1",
+							"type":"CeBoxElement",
+							
+							"x":0.0,
+							"y":-2.5,
+							
+							"scale_x":1.9,
+							"scale_y":0.072,
+							
+							"path_image":"DLC/pictures/black_texture.png",
+							"them":""
+						},
+						{
+							"name":"tabl_0_1_line_3_gorizont",
+							"list":"list_1",
+							"type":"CeBoxElement",
+							
+							"x":0.0,
+							"y":-3.5,
+							
+							"scale_x":1.9,
+							"scale_y":0.072,
+							
+							"path_image":"DLC/pictures/black_texture.png",
+							"them":""
+						},
+						{
+							"name":"tabl_0_1_line_4_gorizont",
+							"list":"list_1",
+							"type":"CeBoxElement",
+							
+							"x":0.0,
+							"y":-4.5,
+							
+							"scale_x":1.9,
+							"scale_y":0.072,
+							
+							"path_image":"DLC/pictures/black_texture.png",
+							"them":""
+						},
+						{
+							"name":"tabl_0_1_line_5_gorizont",
+							"list":"list_1",
+							"type":"CeBoxElement",
+							
+							"x":0.0,
+							"y":-5.5,
+							
+							"scale_x":1.9,
+							"scale_y":0.072,
+							
+							"path_image":"DLC/pictures/black_texture.png",
+							"them":""
+						},
+						{
+							"name":"tabl_0_1_line_6_gorizont",
+							"list":"list_1",
+							"type":"CeBoxElement",
+							
+							"x":0.0,
+							"y":-6.5,
+							
+							"scale_x":1.9,
+							"scale_y":0.072,
+							
+							"path_image":"DLC/pictures/black_texture.png",
+							"them":""
+						},
+						{
+							"name":"tabl_0_1_line_-1_vertical",
+							"list":"list_1",
+							"type":"CeBoxElement",
+							
+							"x":-0.953,
+							"y":-3.0,
+							
+							"scale_x":0.004,
+							"scale_y":7.0,
+							
+							"path_image":"DLC/pictures/black_texture.png",
+							"them":""
+						},
+						{
+							"name":"tabl_0_1",
+							"list":"list_1",
+							"type":"CeTextField",
+							
+							"x":-0.50,
+							"y":-0.37,
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Вар"
+						},
+						{
+							"name":"tabl_0_1_line_0_vertical",
+							"list":"list_1",
+							"type":"CeBoxElement",
+							
+							"x":-0.89,
+							"y":-3.0,
+							
+							"scale_x":0.004,
+							"scale_y":7.0,
+							
+							"path_image":"DLC/pictures/black_texture.png",
+							"them":""
+						},
+						{
+							"name":"tabl_0_1_line_0.1_vertical",
+							"list":"list_1",
+							"type":"CeBoxElement",
+							
+							"x":-0.81,
+							"y":-3.5,
+							
+							"scale_x":0.004,
+							"scale_y":6.0,
+							
+							"path_image":"DLC/pictures/black_texture.png",
+							"them":""
+						},
+						{
+							"name":"tabl_0_1_line_0.2_vertical",
+							"list":"list_1",
+							"type":"CeBoxElement",
+							
+							"x":-0.727,
+							"y":-3.5,
+							
+							"scale_x":0.004,
+							"scale_y":6.0,
+							
+							"path_image":"DLC/pictures/black_texture.png",
+							"them":""
+						},
+						{
+							"name":"tabl_0_1_line_0.3_vertical",
+							"list":"list_1",
+							"type":"CeBoxElement",
+							
+							"x":-0.65,
+							"y":-3.5,
+							
+							"scale_x":0.004,
+							"scale_y":6.0,
+							
+							"path_image":"DLC/pictures/black_texture.png",
+							"them":""
+						},
+						{
+							"name":"tabl_0_1_line_0.4_vertical",
+							"list":"list_1",
+							"type":"CeBoxElement",
+							
+							"x":-0.57,
+							"y":-3.5,
+							
+							"scale_x":0.004,
+							"scale_y":6.0,
+							
+							"path_image":"DLC/pictures/black_texture.png",
+							"them":""
+						},
+						{
+							"name":"tabl_0_1_line_0.5_vertical",
+							"list":"list_1",
+							"type":"CeBoxElement",
+							
+							"x":-0.497,
+							"y":-3.5,
+							
+							"scale_x":0.004,
+							"scale_y":6.0,
+							
+							"path_image":"DLC/pictures/black_texture.png",
+							"them":""
+						},
+						{
+							"name":"tabl_0_2",
+							"list":"list_1",
+							"type":"CeTextField",
+							
+							"x":-0.28,
+							
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Nуст, МВт"
+						},
+						
+						{
+							"name":"tabl_0_1_line_1_vertical",
+							"list":"list_1",
+							"type":"CeBoxElement",
+							
+							"x":-0.42,
+							"y":-3.0,
+							
+							"scale_x":0.004,
+							"scale_y":7.0,
+							
+							"path_image":"DLC/pictures/black_texture.png",
+							"them":""
+						},
+
+						{
+							"name":"tabl_0_7",
+							"list":"list_1",
+							"type":"CeTextField",
+							
+							"x":0.04,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"V, млн. кВт*ч"
+						},
+						{
+							"name":"tabl_0_1_line_2_vertical",
+							"list":"list_1",
+							"type":"CeBoxElement",
+							
+							"x":-0.14,
+							"y":-3.0,
+							
+							"scale_x":0.004,
+							"scale_y":7.0,
+							
+							"path_image":"DLC/pictures/black_texture.png",
+							"them":""
+						},
+						{
+							"name":"tabl_0_8",
+							"list":"list_1",
+							"type":"CeTextField",
+							
+							"x":0.32,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Q, т/год"
+						},
+						{
+							"name":"tabl_0_1_line_2.1_vertical",
+							"list":"list_1",
+							"type":"CeBoxElement",
+							
+							"x":0.147,
+							"y":-3.5,
+							
+							"scale_x":0.004,
+							"scale_y":6.0,
+							
+							"path_image":"DLC/pictures/black_texture.png",
+							"them":""
+						},
+						{
+							"name":"tabl_0_1_line_2.2_vertical",
+							"list":"list_1",
+							"type":"CeBoxElement",
+							
+							"x":0.247,
+							"y":-3.5,
+							
+							"scale_x":0.004,
+							"scale_y":6.0,
+							
+							"path_image":"DLC/pictures/black_texture.png",
+							"them":""
+						},
+						{
+							"name":"tabl_0_1_line_2.3_vertical",
+							"list":"list_1",
+							"type":"CeBoxElement",
+							
+							"x":0.347,
+							"y":-3.5,
+							
+							"scale_x":0.004,
+							"scale_y":6.0,
+							
+							"path_image":"DLC/pictures/black_texture.png",
+							"them":""
+						},
+						{
+							"name":"tabl_0_1_line_3_vertical",
+							"list":"list_1",
+							"type":"CeBoxElement",
+							
+							"x":0.02,
+							"y":-3.0,
+							
+							"scale_x":0.004,
+							"scale_y":7.0,
+							
+							"path_image":"DLC/pictures/black_texture.png",
+							"them":""
+						},
+						{
+							"name":"tabl_0_9",
+							"list":"list_1",
+							"type":"CeTextField",
+							
+							"x":0.48,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"E_ээ, милл. кВт*ч/год"
+						},
+						{
+							"name":"tabl_0_1_line_4.1_vertical",
+							"list":"list_1",
+							"type":"CeBoxElement",
+							
+							"x":0.551,
+							"y":-3.5,
+							
+							"scale_x":0.004,
+							"scale_y":6.0,
+							
+							"path_image":"DLC/pictures/black_texture.png",
+							"them":""
+						},
+						{
+							"name":"tabl_0_1_line_4.2_vertical",
+							"list":"list_1",
+							"type":"CeBoxElement",
+							
+							"x":0.634,
+							"y":-3.5,
+							
+							"scale_x":0.004,
+							"scale_y":6.0,
+							
+							"path_image":"DLC/pictures/black_texture.png",
+							"them":""
+						},
+						{
+							"name":"tabl_0_1_line_4_vertical",
+							"list":"list_1",
+							"type":"CeBoxElement",
+							
+							"x":0.472,
+							"y":-3.0,
+							
+							"scale_x":0.004,
+							"scale_y":7.0,
+							
+							"path_image":"DLC/pictures/black_texture.png",
+							"them":""
+						},
+						{
+							"name":"tabl_0_10",
+							"list":"list_1",
+							"type":"CeTextField",
+							
+							"x":0.95,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"КИУМ, %"
+						},
+						{
+							"name":"tabl_0_1_line_5_vertical",
+							"list":"list_1",
+							"type":"CeBoxElement",
+							
+							"x":0.705,
+							"y":-3.0,
+							
+							"scale_x":0.004,
+							"scale_y":7.0,
+							
+							"path_image":"DLC/pictures/black_texture.png",
+							"them":""
+						},
+						{
+							"name":"tabl_0_11",
+							"list":"list_1",
+							"type":"CeTextField",
+							
+							"x":1.16,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Замещение,%"
+						},
+						{
+							"name":"tabl_0_1_line_6_vertical",
+							"list":"list_1",
+							"type":"CeBoxElement",
+							
+							"x":0.95,
+							"y":-3.0,
+							
+							"scale_x":0.004,
+							"scale_y":7.0,
+							
+							"path_image":"DLC/pictures/black_texture.png",
+							"them":""
+						}					
+					]
+				},
+				{
+					"name":"input_calc_1_tabl_param",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"x":0.01,
+					"y":0.225,
+					"z":0.0,
+					"scale_x":0.5,
+					"scale_y":0.045,
+					"scale_z":1.0,
+
+					"them":"",
+					"path_image":"DLC/pictures/querty_white.png",
+					
+					
+					"list_object":[
+						{
+							"name":"tabl_1_1",
+							"list":"list_1",
+							"type":"CeTextField",
+							
+							"x":-0.45,
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"ДГУ"
+						},
+						{
+							"name":"tabl_1_2",
+							"list":"list_1",
+							"type":"CeTextField",
+							
+							"x":-0.37,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"ФЭУ"
+						},
+						{
+							"name":"tabl_1_3",
+							"list":"list_1",
+							"type":"CeTextField",
+							
+							"x":-0.29,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"ВЭУ"
+						},
+						{
+							"name":"tabl_1_4",
+							"list":"list_1",
+							"type":"CeTextField",
+							
+							"x":-0.21,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"ГЭУ"
+						},
+						{
+							"name":"tabl_1_5",
+							"list":"list_1",
+							"type":"CeTextField",
+							
+							"x":-0.13,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Инв"
+						},
+						{
+							"name":"tabl_1_6",
+							"list":"list_1",
+							"type":"CeTextField",
+							
+							"x":-0.06,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"СНЭ"
+						},
+						{
+							"name":"tabl_1_7",
+							"list":"list_1",
+							"type":"CeTextField",
+							
+							"x":0.12,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"СНЭ"
+						},
+						{
+							"name":"tabl_1_8",
+							"list":"list_1",
+							"type":"CeTextField",
+							
+							"x":0.313,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Дизель"
+						},
+						{
+							"name":"tabl_1_9",
+							"list":"list_1",
+							"type":"CeTextField",
+							
+							"x":0.49,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"ДГУ"
+						},
+						{
+							"name":"tabl_1_10",
+							"list":"list_1",
+							"type":"CeTextField",
+							
+							"x":0.60,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"ФЭУ"
+						},
+						{
+							"name":"tabl_1_11",
+							"list":"list_1",
+							"type":"CeTextField",
+							
+							"x":0.70,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"ВЭУ"
+						},
+						{
+							"name":"tabl_1_12",
+							"list":"list_1",
+							"type":"CeTextField",
+							
+							"x":0.814,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"ГЭУ"
+						},
+						{
+							"name":"tabl_1_14",
+							"list":"list_1",
+							"type":"CeTextField",
+							
+							"x":0.91,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"ФЭУ"
+						},
+						{
+							"name":"tabl_1_15",
+							"list":"list_1",
+							"type":"CeTextField",
+							
+							"x":0.99,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"ВЭУ"
+						},
+						{
+							"name":"tabl_1_16",
+							"list":"list_1",
+							"type":"CeTextField",
+							
+							"x":1.07,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"ГЭУ"
+						},
+						{
+							"name":"tabl_1_17",
+							"list":"list_1",
+							"type":"CeTextField",
+							
+							"x":1.23,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"ДГУ"
+						}
+					]
+				},
+				{
+					"name":"input_calc_2_tabl_param",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"x":0.01,
+					"y":0.18,
+					"z":0.0,
+					"scale_x":0.5,
+					"scale_y":0.03,
+					"scale_z":1.0,
+
+					"them":"",
+					"path_image":"DLC/pictures/querty_white.png",
+					
+					
+					"list_object":[
+						{
+							"name":"tabl_2_0",
+							"list":"list_1",
+							"type":"CeBottom",
+							
+							"x":-0.937,
+							"scale_y":1.5,
+							"scale_x":0.02,
+														
+							"funs_object_change":[
+								{
+									"type":"change_position",
+									"name_object":"input_calc_1_inf",
+									"type_button":"lift",
+
+									"setting":{
+										"x_repite":-1000.0
+									}		
+								}
+							],
+							
+							"id":"1",
+							
+							"funs_dll":[
+								{
+								"type":"launch",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"calc_swith"
+								}
+							],
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"1"
+						},
+						{
+							"name":"tabl_2_1",
+							"list":"list_1",
+							"type":"CeTextField",
+							
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":-0.45,
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_2_2",
+							"list":"list_1",
+							"type":"CeTextField",
+							
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":-0.37,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_2_3",
+							"list":"list_1",
+							"type":"CeTextField",
+														
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":-0.29,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_2_4",
+							"list":"list_1",
+							"type":"CeTextField",
+														
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":-0.21,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_2_5",
+							"list":"list_1",
+							"type":"CeTextField",
+														
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":-0.13,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_2_6",
+							"list":"list_1",
+							"type":"CeTextField",
+														
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":-0.06,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_2_7",
+							"list":"list_1",
+							"type":"CeTextField",
+														
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.12,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_2_8",
+							"list":"list_1",
+							"type":"CeTextField",
+														
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.313,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_2_9",
+							"list":"list_1",
+							"type":"CeTextField",
+														
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.49,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_2_10",
+							"list":"list_1",
+							"type":"CeTextField",
+														
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.60,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_2_11",
+							"list":"list_1",
+							"type":"CeTextField",
+														
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.70,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_2_12",
+							"list":"list_1",
+							"type":"CeTextField",
+														
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.814,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_2_13",
+							"list":"list_1",
+							"type":"CeTextField",
+														
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.91,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_2_14",
+							"list":"list_1",
+							"type":"CeTextField",
+														
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.99,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_2_15",
+							"list":"list_1",
+							"type":"CeTextField",
+							
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":1.07,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_2_16",
+							"list":"list_1",
+							"type":"CeTextField",
+														
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":1.23,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						}
+					]
+				},
+				{
+					"name":"input_calc_3_tabl_param",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"x":0.01,
+					"y":0.13,
+					"z":0.0,
+					"scale_x":0.5,
+					"scale_y":0.03,
+					"scale_z":1.0,
+
+					"them":"",
+					"path_image":"DLC/pictures/querty_white.png",
+					
+					
+					"list_object":[
+						{
+							"name":"tabl_3_0",
+							"list":"list_1",
+							"type":"CeBottom",
+							
+							"x":-0.937,
+							"scale_y":1.5,
+							"scale_x":0.02,
+							
+							
+							"funs_object_change":[
+								{
+									"type":"change_position",
+									"name_object":"input_calc_1_inf",
+									"type_button":"lift",
+
+									"setting":{
+										"x_repite":-1000.0
+									}		
+								}
+							],
+							
+							"id":"2",
+							
+							"funs_dll":[
+								{
+								"type":"launch",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"calc_swith"
+								}
+							],
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"2"
+						},
+						{
+							"name":"tabl_3_1",
+							"list":"list_1",
+							"type":"CeTextField",
+														
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":-0.45,
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_3_2",
+							"list":"list_1",
+							"type":"CeTextField",
+														
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":-0.37,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_3_3",
+							"list":"list_1",
+							"type":"CeTextField",
+														
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":-0.29,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_3_4",
+							"list":"list_1",
+							"type":"CeTextField",
+														
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":-0.21,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_3_5",
+							"list":"list_1",
+							"type":"CeTextField",
+														
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":-0.13,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_3_6",
+							"list":"list_1",
+							"type":"CeTextField",
+														
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":-0.06,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_3_7",
+							"list":"list_1",
+							"type":"CeTextField",
+														
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.12,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_3_8",
+							"list":"list_1",
+							"type":"CeTextField",
+														
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.313,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_3_9",
+							"list":"list_1",
+							"type":"CeTextField",
+														
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.49,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_3_10",
+							"list":"list_1",
+							"type":"CeTextField",
+														
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.60,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_3_11",
+							"list":"list_1",
+							"type":"CeTextField",
+														
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.70,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_3_12",
+							"list":"list_1",
+							"type":"CeTextField",
+														
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.814,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_3_13",
+							"list":"list_1",
+							"type":"CeTextField",
+														
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.91,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_3_14",
+							"list":"list_1",
+							"type":"CeTextField",
+														
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.99,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_3_15",
+							"list":"list_1",
+							"type":"CeTextField",
+														
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":1.07,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_3_16",
+							"list":"list_1",
+							"type":"CeTextField",
+														
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							"x":1.23,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						}
+					]
+				},
+				{
+					"name":"input_calc_4_tabl_param",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"x":0.01,
+					"y":0.085,
+					"z":0.0,
+					"scale_x":0.5,
+					"scale_y":0.03,
+					"scale_z":1.0,
+
+					"them":"",
+					"path_image":"DLC/pictures/querty_white.png",
+					
+					
+					"list_object":[
+						{
+							"name":"tabl_4_0",
+							"list":"list_1",
+							"type":"CeBottom",
+							
+							"x":-0.937,
+							"scale_y":1.5,
+							"scale_x":0.02,
+							
+							
+							"funs_object_change":[
+								{
+									"type":"change_position",
+									"name_object":"input_calc_1_inf",
+									"type_button":"lift",
+
+									"setting":{
+										"x_repite":-1000.0
+									}		
+								}
+							],
+							
+							"id":"3",
+							
+							"funs_dll":[
+								{
+								"type":"launch",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"calc_swith"
+								}
+							],
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"3"
+						},
+						{
+							"name":"tabl_4_1",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":-0.45,
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_4_2",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":-0.37,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_4_3",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":-0.29,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_4_4",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":-0.21,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_4_5",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":-0.13,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_4_6",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":-0.06,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_4_7",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.12,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_4_8",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.313,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_4_9",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.49,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_4_10",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.60,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_4_11",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.70,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_4_12",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.814,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_4_13",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.91,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_4_14",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.99,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_4_15",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":1.07,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_4_16",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":1.23,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						}
+					]
+				},
+				{
+					"name":"input_calc_5_tabl_param",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"x":0.01,
+					"y":0.04,
+					"z":0.0,
+					"scale_x":0.5,
+					"scale_y":0.03,
+					"scale_z":1.0,
+
+					"them":"",
+					"path_image":"DLC/pictures/querty_white.png",
+					
+					
+					"list_object":[
+						{
+							"name":"tabl_5_0",
+							"list":"list_1",
+							"type":"CeBottom",
+							
+							"x":-0.937,
+							"scale_y":1.5,
+							"scale_x":0.02,
+														
+							"funs_object_change":[
+								{
+									"type":"change_position",
+									"name_object":"input_calc_1_inf",
+									"type_button":"lift",
+
+									"setting":{
+										"x_repite":-1000.0
+									}		
+								}
+							],
+							
+							"id":"4",
+							
+							"funs_dll":[
+								{
+								"type":"launch",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"calc_swith"
+								}
+							],
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"4"
+						},
+						{
+							"name":"tabl_5_1",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":-0.45,
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_5_2",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":-0.37,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_5_3",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":-0.29,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_5_4",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":-0.21,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_5_5",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":-0.13,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_5_6",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":-0.06,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_5_7",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.12,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_5_8",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.313,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_5_9",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.49,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_5_10",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.60,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_5_11",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.70,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_5_12",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.814,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_5_13",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.91,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_5_14",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.99,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_5_15",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":1.07,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_5_16",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":1.23,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						}
+					]
+				},
+				{
+					"name":"input_calc_6_tabl_param",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"x":0.01,
+					"y":-0.005,
+					"z":0.0,
+					"scale_x":0.5,
+					"scale_y":0.03,
+					"scale_z":1.0,
+
+					"them":"",
+					"path_image":"DLC/pictures/querty_white.png",
+					
+					
+					"list_object":[
+						{
+							"name":"tabl_6_0",
+							"list":"list_1",
+							"type":"CeBottom",
+							
+							"x":-0.937,
+							"scale_y":1.5,
+							"scale_x":0.02,
+							
+							
+							"funs_object_change":[
+								{
+									"type":"change_position",
+									"name_object":"input_calc_1_inf",
+									"type_button":"lift",
+
+									"setting":{
+										"x_repite":-1000.0
+									}		
+								}
+							],
+							
+							"id":"5",
+							
+							"funs_dll":[
+								{
+								"type":"launch",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"calc_swith"
+								}
+							],
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"5"
+						},
+						{
+							"name":"tabl_6_1",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":-0.45,
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_6_2",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":-0.37,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_6_3",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":-0.29,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_6_4",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":-0.21,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_6_5",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":-0.13,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_6_6",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":-0.06,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_6_7",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.12,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_6_8",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.313,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_6_9",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.49,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_6_10",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.60,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_6_11",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.70,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_6_12",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.814,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_6_13",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.91,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_6_14",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":0.99,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_6_15",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":1.07,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						},
+						{
+							"name":"tabl_6_16",
+							"list":"list_1",
+							"type":"CeTextField",
+																					
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_table_1"
+								}
+							],
+							
+							"x":1.23,
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"000.0"
+						}
+					]
+				},
+				{
+					"name":"input_parametr_calc_global_solar_name_parametrs",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"x":0.1,
+					"y":-0.4,
+					"z":0.0,
+					"scale_x":0.1,
+					"scale_y":0.15,
+					"scale_z":1.0,
+
+					"them":"",
+					
+					"array_setting":{
+						"scale_y_start":0.3,
+						"scale_x_start":1.0,
+						"x_start":-0.04,
+						"y_start":1.0,
+						"y_offset":-0.35
+					},
+					"path_image":"DLC/pictures/querty_white.png",
+					
+					"list_object":[
+						{
+							"name":"yers_cost_model_s",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Расчётнный период"
+						},
+						{
+							"name":"ee_cost_s",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Тариф на электроэнергию"
+						},
+						{
+							"name":"discount_rate_s",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Норма дисконта"
+						},
+						{
+							"name":"income_tax_s",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Налог на прибыль"
+						}		
+					]
+				},
+				{
+					"name":"input_parametr_calc_global_solar_parametrs",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"x":0.33,
+					"y":-0.4,
+					"z":0.0,
+					"scale_x":0.1,
+					"scale_y":0.15,
+					"scale_z":1.0,
+
+					"them":"",
+					
+					"array_setting":{
+						"scale_y_start":0.3,
+						"scale_x_start":1.0,
+						"x_start":-0.04,
+						"y_start":1.0,
+						"y_offset":-0.35
+					},
+					
+					"path_image":"DLC/pictures/querty_white.png",
+					"list_object":[
+						{
+							"name":"yers_cost_model_s_input",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface_cout"
+								}
+							],
+					
+							"namber_setting":{
+								"min":0.0,
+								"max":100.0,
+								"accurate":0
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"5"
+						},
+						{
+							"name":"ee_cost_s_input",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface_cout"
+								}
+							],
+							
+							"namber_setting":{
+								"min":0.0,
+								"max":15000.0,
+								"accurate":2
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"5.75"
+						},						
+						{
+							"name":"discount_rate_s_input",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface_cout"
+								}
+							],
+							
+							"namber_setting":{
+								"min":0.0,
+								"max":1.0,
+								"accurate":2
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"0.0"
+						},
+						{
+							"name":"income_tax_s_input",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface_cout"
+								}
+							],
+							
+							"namber_setting":{
+								"min":0.0,
+								"max":1.0,
+								"accurate":2
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"0.0"
+						}			
+					]
+				},
+				{
+					"name":"input_parametr_calc_global_solar_measure_unit",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"x":0.43,
+					"y":-0.4,
+					"z":0.0,
+					"scale_x":0.1,
+					"scale_y":0.15,
+					"scale_z":1.0,
+
+					"them":"",
+					
+					"array_setting":{
+						"scale_y_start":0.3,
+						"scale_x_start":1.0,
+						"x_start":-0.04,
+						"y_start":1.0,
+						"y_offset":-0.35
+					},
+
+					"path_image":"DLC/pictures/querty_white.png",
+					"list_object":[
+						{
+							"name":"yers_cost_model_s_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"лет"
+						},
+						{
+							"name":"ee_cost_s_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"руб/кВт*ч"
+						},
+						{
+							"name":"discount_rate_s_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"о.е."
+						},
+						{
+							"name":"income_tax_s_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"о.е."
+						}				
+					]
+				}
+			]
+		}
+	]	
+}

@@ -1,0 +1,258 @@
+{
+	"name_win":"name_win_",
+	
+	"list_object":[
+		{
+			"name":"SOLAR_Any_a_solar",
+			"list":"Any_a",
+			"type":"CeBoxElement",
+
+			"x":0.2,
+			"y":-0.05,
+			"z":0.0,
+			"scale_x":1.58,
+			"scale_y":1.7,
+			"scale_z":1.0,
+
+			"them":"",
+			"list_object":[
+				{
+					"name":"optimal_Any_a_Graf_1",
+					"list":"Any_a",
+					"type":"CeGraphics",
+
+
+					"x":0.0,
+					"y":0.0,
+					
+					"scale_x":0.7,
+					"scale_y":0.25,
+
+					"Setting_axis":[
+						{
+						"type":1,
+						"font":"fonts/verdana.ttf",
+						"name_axis":"t, дни",
+						"cout_divisions":13,
+						"accurate":0
+						},
+						{
+						"type":0,
+						"font":"fonts/verdana.ttf",
+						"name_axis":"Вт*ч/м^2",
+						"cout_divisions":10,
+						"accurate":0
+						}
+					],
+					
+					"funs_dll":[
+						{
+						"type":"out_data",
+						"name_shared_lib":"DLC\\libkadastr.dll",
+						"name_fun":"set_get_data_interface_graf"
+						}
+					],
+					
+					"them":""
+				},
+				{
+					"name":"Any_a_solar_down_result",
+					"list":"Any_a",
+					"type":"CeBottom",
+					
+					"x":-0.235,
+					"y":0.45,
+					"z":0.0,
+					"scale_x":0.4,
+					"scale_y":0.05,
+					"scale_z":1.0,
+					
+					"funs_dll":[
+						{
+						"type":"launch",
+						"name_shared_lib":"DLC\\libkadastr.dll",
+						"name_fun":"get_data_stage_3"
+						}
+					],
+					
+					"them":"",
+					"font":"fonts/verdana.ttf",
+					"text":"Сохранить результат"
+				},
+				{
+					"name":"Any_a_solar_name_graf_1",
+					"list":"Any_a",
+					"type":"CeTextField",
+					
+					"x":-0.2,
+					"y":0.144,
+					"z":0.0,
+					"scale_x":0.1,
+					"scale_y":0.028,
+					"scale_z":1.0,
+					
+					"them":"",
+					"font":"fonts/verdana.ttf",
+					"text":"График зависимость прихода сумммарной СР в течение года"
+				},
+				{
+					"name":"input_Any_a_solar_name_parametrs",
+					"list":"Any_a",
+					"type":"CeBoxElement",
+
+					"x":-0.375,
+					"y":0.225,
+					"z":0.0,
+					"scale_x":0.1,
+					"scale_y":0.15,
+					"scale_z":1.0,
+
+					"them":"",
+					
+					"array_setting":{
+						"scale_y_start":0.3,
+						"scale_x_start":1.0,
+						"x_start":-0.04,
+						"y_start":1.0,
+						"y_offset":-0.35
+					},
+					
+					"list_object":[
+						{
+							"name":"B_сurrent_s",
+							"list":"Any_a",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Угол B"
+						},
+						{
+							"name":"Azimut_сurrent_s",
+							"list":"Any_a",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Азимут"
+						}		
+					]
+				},
+				{
+					"name":"input_Any_a_solar_parametrs",
+					"list":"Any_a",
+					"type":"CeBoxElement",
+
+					"x":-0.05,
+					"y":0.225,
+					"z":0.0,
+					"scale_x":0.1,
+					"scale_y":0.15,
+					"scale_z":1.0,
+
+					"them":"",
+					
+					"array_setting":{
+						"scale_y_start":0.3,
+						"scale_x_start":1.0,
+						"x_start":-0.04,
+						"y_start":1.0,
+						"y_offset":-0.35
+					},
+
+					"list_object":[					
+						{
+							"name":"B_сurrent_s_input",
+							"list":"Any_a",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"out_data",
+									"name_shared_lib":"DLC\\libkadastr.dll",
+									"name_fun":"set_get_data_interface"
+								},
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libkadastr.dll",
+									"name_fun":"set_data_interface"
+								}
+							],
+
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"0"
+						},
+						{
+							"name":"Azimut_сurrent_s_input",
+							"list":"Any_a",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"out_data",
+									"name_shared_lib":"DLC\\libkadastr.dll",
+									"name_fun":"set_get_data_interface"
+								},
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libkadastr.dll",
+									"name_fun":"set_data_interface"
+								}
+							],
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"180"
+						}			
+					]
+				},
+				{
+					"name":"input_Any_a_solar_measure_unit",
+					"list":"Any_a",
+					"type":"CeBoxElement",
+
+					"x":0.05,
+					"y":0.225,
+					"z":0.0,
+					"scale_x":0.1,
+					"scale_y":0.15,
+					"scale_z":1.0,
+
+					"them":"",
+					
+					"array_setting":{
+						"scale_y_start":0.3,
+						"scale_x_start":1.0,
+						"x_start":-0.04,
+						"y_start":1.0,
+						"y_offset":-0.35
+					},
+
+					
+					"list_object":[
+						{
+							"name":"B_сurrent_s_measure_unit",
+							"list":"Any_a",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Град"
+						},
+						{
+							"name":"Azimut_сurrent_s_measure_unit",
+							"list":"Any_a",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Град"
+						}				
+					]
+				}
+			]	
+		}
+	]	
+}

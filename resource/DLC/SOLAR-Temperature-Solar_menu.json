@@ -1,0 +1,295 @@
+{
+	"name_win":"name_win_",
+	
+	"list_object":[
+		{
+			"name":"SOLAR_Temperature_solar",
+			"list":"Temperature_solar",
+			"type":"CeBoxElement",
+
+			"x":0.2,
+			"y":-0.05,
+			"z":0.0,
+			"scale_x":1.58,
+			"scale_y":1.7,
+			"scale_z":1.0,
+
+			"them":"",
+			"list_object":[
+				{
+					"name":"Temperature_solar_Graf_1",
+					"list":"Temperature_solar",
+					"type":"CeGraphics",
+
+
+					"x":0.0,
+					"y":0.0,
+					
+					"scale_x":0.7,
+					"scale_y":0.25,
+
+					"Setting_axis":[
+						{
+						"type":1,
+						"font":"fonts/verdana.ttf",
+						"name_axis":"t, дни",
+						"cout_divisions":13,
+						"accurate":0
+						},
+						{
+						"type":0,
+						"font":"fonts/verdana.ttf",
+						"name_axis":"Вт/м^2",
+						"cout_divisions":10,
+						"accurate":0
+						}
+					],
+					
+					"funs_dll":[
+						{
+						"type":"out_data",
+						"name_shared_lib":"DLC\\libkadastr.dll",
+						"name_fun":"set_get_data_interface_graf"
+						}
+					],
+					
+					"them":""
+				},
+				{
+					"name":"Temperature_solar_down_result",
+					"list":"Temperature_solar",
+					"type":"CeBottom",
+					
+					"x":-0.235,
+					"y":0.45,
+					"z":0.0,
+					"scale_x":0.4,
+					"scale_y":0.05,
+					"scale_z":1.0,
+					
+					"funs_dll":[
+						{
+						"type":"launch",
+						"name_shared_lib":"DLC\\libkadastr.dll",
+						"name_fun":"get_data_stage_4"
+						}
+					],
+					
+					"them":"",
+					"font":"fonts/verdana.ttf",
+					"text":"Сохранить результат"
+				},
+				{
+					"name":"Temperature_solar_inf_0",
+					"list":"Temperature_solar",
+					"type":"CeTextField",
+					
+					"x":0.235,
+					"y":0.4,
+					"z":0.0,
+					"scale_x":0.4,
+					"scale_y":0.055,
+					"scale_z":1.0,
+					
+					"them":"",
+					"font":"fonts/verdana.ttf",
+					"text":"Температурныный коэффицент для:"
+				},
+				{
+					"name":"Temperature_solar_inf_1",
+					"list":"Temperature_solar",
+					"type":"CeTextField",
+					
+					"x":0.235,
+					"y":0.35,
+					"z":0.0,
+					"scale_x":0.4,
+					"scale_y":0.042,
+					"scale_z":1.0,
+					
+					"them":"",
+					"font":"fonts/verdana.ttf",
+					"text":"Аморфного кремния(тонкие плёнки)  - 0.003"
+				},
+				{
+					"name":"Temperature_solar_inf_2",
+					"list":"Temperature_solar",
+					"type":"CeTextField",
+					
+					"x":0.235,
+					"y":0.30,
+					"z":0.0,
+					"scale_x":0.4,
+					"scale_y":0.042,
+					"scale_z":1.0,
+					
+					"them":"",
+					"font":"fonts/verdana.ttf",
+					"text":"Поли- Монокристаллического кремния - 0.006"
+				},
+				{
+					"name":"Temperature_solar_name_graf_1",
+					"list":"Temperature_solar",
+					"type":"CeTextField",
+					
+					"x":-0.2,
+					"y":0.144,
+					"z":0.0,
+					"scale_x":0.1,
+					"scale_y":0.028,
+					"scale_z":1.0,
+					
+					"them":"",
+					"font":"fonts/verdana.ttf",
+					"text":"Зависимость сумаррной выработки за год от темпертуры и градуса:"
+				},
+				{
+					"name":"input_Temperature_solar_name_parametrs",
+					"list":"Temperature_solar",
+					"type":"CeBoxElement",
+
+					"x":-0.375,
+					"y":0.225,
+					"z":0.0,
+					"scale_x":0.1,
+					"scale_y":0.15,
+					"scale_z":1.0,
+
+					"them":"",
+					
+					"array_setting":{
+						"scale_y_start":0.3,
+						"scale_x_start":1.0,
+						"x_start":-0.04,
+						"y_start":1.0,
+						"y_offset":-0.35
+					},
+					
+					"list_object":[
+						{
+							"name":"K_T_s",
+							"list":"Temperature_solar",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Температурныный коэффицент"
+						},
+						{
+							"name":"NOST_s",
+							"list":"Temperature_solar",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"NOST"
+						}		
+					]
+				},
+				{
+					"name":"input_Temperature_solar_parametrs",
+					"list":"Temperature_solar",
+					"type":"CeBoxElement",
+
+					"x":-0.05,
+					"y":0.225,
+					"z":0.0,
+					"scale_x":0.1,
+					"scale_y":0.15,
+					"scale_z":1.0,
+
+					"them":"",
+					
+					"array_setting":{
+						"scale_y_start":0.3,
+						"scale_x_start":1.0,
+						"x_start":-0.04,
+						"y_start":1.0,
+						"y_offset":-0.35
+					},
+
+					"list_object":[
+						{
+							"name":"K_T_s_input",
+							"list":"Temperature_solar",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libkadastr.dll",
+									"name_fun":"set_data_interface"
+								}
+							],
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"0.003"
+						},
+						{
+							"name":"NOST_s_input",
+							"list":"Temperature_solar",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libkadastr.dll",
+									"name_fun":"set_data_interface"
+								}
+							],
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"47"
+						}			
+					]
+				},
+				{
+					"name":"input_Temperature_solar_measure_unit",
+					"list":"Temperature_solar",
+					"type":"CeBoxElement",
+
+					"x":0.05,
+					"y":0.225,
+					"z":0.0,
+					"scale_x":0.1,
+					"scale_y":0.15,
+					"scale_z":1.0,
+
+					"them":"",
+					
+					"array_setting":{
+						"scale_y_start":0.3,
+						"scale_x_start":1.0,
+						"x_start":-0.04,
+						"y_start":1.0,
+						"y_offset":-0.35
+					},
+
+					
+					"list_object":[
+						{
+							"name":"K_T_s_measure_unit",
+							"list":"Temperature_solar",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"о.е. "
+						},
+						{
+							"name":"NOST_s_measure_unit",
+							"list":"Temperature_solar",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"C "
+						}			
+					]
+				}
+			]	
+		}
+	]	
+}

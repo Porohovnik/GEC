@@ -1,0 +1,288 @@
+{
+	"name_win":"name_win_",
+	
+	"list_object":[
+		{
+			"name":"Menu_solar",
+			"list":"Меню расчёта",
+			"type":"CeBoxElement",
+
+			"x":0.0,
+			"y":0.045,
+			"z":0.1,
+			"scale_x":2.0,
+			"scale_y":1.92,
+			"scale_z":1.0,
+
+			"them":"",
+			
+			"list_object":[
+				{
+					"name":"name_input_Menu_solar",
+					"list":"Меню расчёта",
+					"type":"CeTextField",
+
+					"x":-0.485,
+					"y":0.45,
+					"z":0.0,
+					"scale_x":0.01,
+					"scale_y":0.064,
+					"scale_z":1.0,
+					
+					
+					"them":"",
+					"font":"fonts/verdana.ttf",
+					"text":"Данные этапов моделирования"
+				},
+				{
+					"name":"Menu_solar_line_1_gorizont",
+					"list":"Меню расчёта",
+					"type":"CeBoxElement",
+					
+					"x":0.00,
+					"y":0.412,
+
+					"scale_x":1.0,
+					"scale_y":0.015,
+					
+					"path_image":"DLC/pictures/black_texture.png",
+					"them":""
+				},
+				{
+					"name":"Menu_solar_line_1_vertical",
+					"list":"Меню расчёта",
+					"type":"CeBoxElement",
+					
+					"x":-0.3,
+					"y":-0.04,
+
+					"scale_x":0.007,
+					"scale_y":0.9,
+					
+					"path_image":"DLC/pictures/black_texture.png",
+					"them":""
+				},
+				{
+					"name":"Menu_solar_button",
+					"list":"Меню расчёта",
+					"type":"CeBoxElement",
+
+					"x":-0.4,
+					"y":0.35,
+					"z":0.0,
+					"scale_x":0.19,
+					"scale_y":1.2,
+					"scale_z":1.0,
+
+					"them":"",
+					
+					"array_setting":{
+						"scale_y_start":0.03,
+						"scale_x_start":1.0,
+						"y_offset":-0.038
+					},
+					
+					"list_object":[
+						{
+							"name":"Kadastr_button",
+							"list":"Меню расчёта",
+							"type":"CeBottom",
+							
+							"funs_utiliti_launch":[
+								{
+									"type":"change_list",
+									"type_button":"lift",
+									
+									"set_status":"NOVISEBLE"
+								},
+								{
+									"type":"change_list",
+									"type_button":"lift",
+									
+									"set_status":"VISEBLE",
+									"name_list" :"list_0"
+								},
+								{
+									"type":"change_list",
+									"type_button":"lift",
+									
+									"set_status":"VISEBLE",
+									"name_list" :"Меню расчёта"
+								},
+								{
+									"type":"change_list",
+									"type_button":"lift",
+									
+									"set_status":"VISEBLE",
+									"name_list" :"kadastr"
+								}
+							],
+							
+
+					
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"ГЭР"
+						},
+						{
+							"name":"Optimal_A_solar_col_button",
+							"list":"Меню расчёта",
+							"type":"CeBottom",
+
+							"funs_utiliti_launch":[
+								{
+									"type":"change_list",
+									"type_button":"lift",
+									
+									"set_status":"NOVISEBLE"
+								},
+								{
+									"type":"change_list",
+									"type_button":"lift",
+									
+									"set_status":"VISEBLE",
+									"name_list" :"list_0"
+								},
+								{
+									"type":"change_list",
+									"type_button":"lift",
+									
+									"set_status":"VISEBLE",
+									"name_list" :"Меню расчёта"
+								},
+								{
+									"type":"change_list",
+									"type_button":"lift",
+									
+									"set_status":"VISEBLE",
+									"name_list" :"optimal_A"
+								}
+							],
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Оптимальный угол"
+						},
+						{
+							"name":"A_solar_col_button",
+							"list":"Меню расчёта",
+							"type":"CeBottom",
+							
+							"funs_utiliti_launch":[
+								{
+									"type":"change_list",
+									"type_button":"lift",
+									
+									"set_status":"NOVISEBLE"
+								},
+								{
+									"type":"change_list",
+									"type_button":"lift",
+									
+									"set_status":"VISEBLE",
+									"name_list" :"list_0"
+								},
+								{
+									"type":"change_list",
+									"type_button":"lift",
+									
+									"set_status":"VISEBLE",
+									"name_list" :"Меню расчёта"
+								},
+								{
+									"type":"change_list",
+									"type_button":"lift",
+									
+									"set_status":"VISEBLE",
+									"name_list" :"Any_a"
+								}
+							],
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Наклонная площадка"
+						},
+						{
+							"name":"T_solar_col_button",
+							"list":"Меню расчёта",
+							"type":"CeBottom",
+							
+							"funs_utiliti_launch":[
+								{
+									"type":"change_list",
+									"type_button":"lift",
+									
+									"set_status":"NOVISEBLE"
+								},
+								{
+									"type":"change_list",
+									"type_button":"lift",
+									
+									"set_status":"VISEBLE",
+									"name_list" :"list_0"
+								},
+								{
+									"type":"change_list",
+									"type_button":"lift",
+									
+									"set_status":"VISEBLE",
+									"name_list" :"Меню расчёта"
+								},
+								{
+									"type":"change_list",
+									"type_button":"lift",
+									
+									"set_status":"VISEBLE",
+									"name_list" :"Temperature_solar"
+								}
+							],
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Учёт температуры"
+						},
+						{
+							"name":"EE_col_button",
+							"list":"Меню расчёта",
+							"type":"CeBottom",
+
+							"funs_utiliti_launch":[
+								{
+									"type":"change_list",
+									"type_button":"lift",
+									
+									"set_status":"NOVISEBLE"
+								},
+								{
+									"type":"change_list",
+									"type_button":"lift",
+									
+									"set_status":"VISEBLE",
+									"name_list" :"list_0"
+								},
+								{
+									"type":"change_list",
+									"type_button":"lift",
+									
+									"set_status":"VISEBLE",
+									"name_list" :"Меню расчёта"
+								},
+								{
+									"type":"change_list",
+									"type_button":"lift",
+									
+									"set_status":"VISEBLE",
+									"name_list" :"result"
+								}
+							],
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Выработка СФЭМ"
+						}		
+					]
+				}
+			]
+		}
+	]	
+}

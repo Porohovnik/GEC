@@ -1,0 +1,252 @@
+{
+	"name_win":"name_win_",
+	
+	"list_object":[
+		{
+			"name":"Kadastr_solar",
+			"list":"list_1",
+			"type":"CeBoxElement",
+
+			"x":0.0,
+			"y":-0.58,
+			"z":0.0,
+			"scale_x":2.0,
+			"scale_y":1.0,
+			"scale_z":1.0,
+
+			"them":"",
+
+			"list_object":[
+				{
+					"name":"Kadastr_solar_Graf",
+					"list":"list_1",
+					"type":"CeGraphics",
+
+
+					"x":0.25,
+					"y":0.1,
+					"scale_x":0.4,
+					"scale_y":0.66,
+
+					"Setting_axis":[
+						{
+						"type":1,
+						"font":"fonts/verdana.ttf",
+						"name_axis":"t, дни",
+						"cout_divisions":13,
+						"accurate":0
+						},
+						{
+						"type":0,
+						"font":"fonts/verdana.ttf",
+						"name_axis":"Вт/м^2",
+						"cout_divisions":6,
+						"accurate":0
+						},
+						{
+						"type":0,
+						"font":"fonts/verdana.ttf",
+						"name_axis":"t, часы",
+						"cout_divisions":6
+						},
+						{
+						"type":0,
+						"font":"fonts/verdana.ttf",
+						"name_axis":"T, Цельсий",
+						"cout_divisions":6
+						}
+					],
+					
+					"funs_dll":[
+						{
+						"type":"out_data",
+						"name_shared_lib":"DLC\\libkadastr.dll",
+						"name_fun":"set_grafics"
+						}
+					],
+					"them":""
+				},
+				{
+					"name":"input_Kadastr_solar_name_parametrs",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"x":-0.375,
+					"y":-0.5,
+					"z":0.0,
+					"scale_x":0.25,
+					"scale_y":1.2,
+					"scale_z":1.0,
+
+					"them":"",
+					
+					"array_setting":{
+						"scale_y_start":0.055,
+						"scale_x_start":1.0,
+						"x_start":-0.04,
+						"y_start":0.45,
+						"y_offset":-0.058
+					},
+					
+					"list_object":[
+						{
+							"name":"E_sum_s",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Суммарная солнечная радиация"
+						},
+						{
+							"name":"T_max_s",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Максимальная температура"
+						},
+						{
+							"name":"T_min_s",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Минимальная температура"
+						}		
+					]
+				},
+				{
+					"name":"input_Kadastr_solar_parametrs",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"x":-0.24,
+					"y":-0.5,
+					"z":-0.1,
+					"scale_x":0.08,
+					"scale_y":1.2,
+					"scale_z":1.0,
+
+					"them":"",
+					
+					"array_setting":{
+						"scale_y_start":0.055,
+						"scale_x_start":1.0,
+						"y_start":0.45,
+						"y_offset":-0.068
+					},
+					
+					"list_object":[
+						{
+							"name":"E_sum_s_input",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libkadastr.dll",
+								"name_fun":"set_E_sum"
+								}
+							],
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"00000.00"
+						},
+						{
+							"name":"T_max_s_input",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libkadastr.dll",
+								"name_fun":"set_T_max"
+								}
+							],
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"00000.00"
+						},
+						{
+							"name":"T_min_s_input",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libkadastr.dll",
+								"name_fun":"set_T_min"
+								}
+							],
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"00000.00"
+						}			
+					]
+				},
+				{
+					"name":"input_Kadastr_solar_measure_unit",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"x":-0.15,
+					"y":-0.5,
+					"z":0.0,
+					"scale_x":0.08,
+					"scale_y":1.2,
+					"scale_z":1.0,
+
+					"them":"",
+					"path_image":"DLC/pictures/querty_white.png",
+					
+					"array_setting":{
+						"scale_y_start":0.055,
+						"scale_x_start":1.0,
+						"x_start":-0.04,
+						"y_start":0.45,
+						"y_offset":-0.068
+					},
+					
+					"list_object":[
+						{
+							"name":"E_sum_s_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"кВт*ч/м^2"
+						},
+						{
+							"name":"T_max_s_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"C"
+						},
+						{
+							"name":"T_min_s_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"C"
+						}			
+					]
+				}
+			]
+		}
+	]	
+}

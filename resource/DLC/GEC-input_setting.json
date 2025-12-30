@@ -1,0 +1,369 @@
+{
+	"name_win":"name_win_",
+	
+	"list_object":[
+		{
+			"name":"-000",
+			"list":"list_1",
+			"type":"CeBottom",
+			
+			"x":-0.3,
+			"y":-10000.8,
+			"z":-0.4,
+			
+			"scale_x":0.4,
+			"scale_y":0.2,
+			
+			"them":"",
+			"font":"fonts/verdana.ttf",
+			"text":" "
+		},
+		{
+			"name":"input_setting",
+			"list":"list_1",
+			"type":"CeBoxElement",
+
+			"x":1000.0,
+			"y":-0.2,
+			"z":-0.9,
+			"scale_x":1.2,
+			"scale_y":1.7,
+			"scale_z":1.0,
+
+			"them":"",
+			"path_image":"DLC/pictures/jjj1.png",
+
+			"list_object":[
+				{
+					"name":"name_input_setting",
+					"list":"list_1",
+					"type":"CeTextField",
+
+					"x":-0.4,
+					"y":0.4,
+					"z":0.0,
+					"scale_x":0.1,
+					"scale_y":0.08,
+					"scale_z":1.0,
+					
+					
+					"them":"",
+					"font":"fonts/verdana.ttf",
+					"text":"Настройки модели"
+				},
+				{
+				
+					"name":"close_input_setting",
+					"list":"list_1",
+					"type":"CeBottom",
+
+					"x":0.448,
+					"y":0.42,
+					"z":-0.1,
+					"scale_x":0.06,
+					"scale_y":0.08,
+					"scale_z":1.0,
+					
+					"funs_object_change":[
+						{
+							"type":"change_position",
+							"name_object":"input_setting",
+							"type_button":"lift",
+
+							"setting":{
+								"x_repite":-1000.0
+							}		
+						}
+					],
+					
+					"them":"",
+					"font":"fonts/verdana.ttf",
+					"path_image":"DLC/pictures/closed.png",
+					"text":" "
+				},
+				{
+					"name":"input_setting_name_parametrs",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"x":-0.15,
+					"y":-0.05,
+					"z":0.0,
+					"scale_x":0.55,
+					"scale_y":0.65,
+					"scale_z":1.0,
+
+					"them":"",
+					"path_image":"DLC/pictures/querty_white.png",
+					
+					"array_setting":{
+						"scale_y_start":0.065,
+						"scale_x_start":1.0,
+						"x_start":-0.04,
+						"y_start":0.45,
+						"y_offset":-0.068
+					},
+					
+					"list_object":[
+						{
+							"name":"Lat",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Широта местности"
+						},
+						{
+							"name":"Times",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Число дней моделирования"
+						},
+						{
+							"name":"Yers",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Год"
+						},
+						{
+							"name":"Monthe",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Месяц"
+						},
+						{
+							"name":"Day",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"День в месяце"
+						}			
+					]
+				},
+				{
+					"name":"input_setting_parametrs",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"x":0.2,
+					"y":-0.05,
+					
+					"scale_x":0.12,
+					"scale_y":0.65,
+					"scale_z":1.0,
+
+					"them":"",
+					"path_image":"DLC/pictures/querty_white.png",
+					
+					"array_setting":{
+						"scale_y_start":0.065,
+						"scale_x_start":1.0,
+						"y_start":0.45,
+						"y_offset":-0.068
+					},
+					
+					"list_object":[
+						{
+							"name":"Lat_input",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface"
+								}
+							],
+							
+							"namber_setting":{
+								"min":0.0,
+								"max":90.0,
+								"accurate":2
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"00000.00"
+						},
+						{
+							"name":"Times_input",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface"
+								}
+							],
+
+							"namber_setting":{
+								"min":0.0,
+								"max":365.0,
+								"accurate":0
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"00000.00"
+						},
+						{
+							"name":"Yers_input",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface"
+								}
+							],
+
+							"namber_setting":{
+								"min":1985.0,
+								"max":1000000.0,
+								"accurate":0
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"00000.00"
+						},
+						{
+							"name":"Monthe_input",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface"
+								}
+							],
+
+							"namber_setting":{
+								"min":1.0,
+								"max":12.0,
+								"accurate":0
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"00000.00"
+						},
+						{
+							"name":"Day_input",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface"
+								}
+							],
+							
+							"namber_setting":{
+								"min":1.0,
+								"max":31.0,
+								"accurate":0
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"00000.00"
+						}			
+					]
+				},
+				{
+					"name":"input_setting_measure_unit",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"x":0.325,
+					"y":-0.05,
+					"z":0.0,
+					"scale_x":0.12,
+					"scale_y":0.65,
+					"scale_z":1.0,
+
+					"them":"",
+					"path_image":"DLC/pictures/querty_white.png",
+					
+					"array_setting":{
+						"scale_y_start":0.065,
+						"scale_x_start":1.0,
+						"x_start":-0.04,
+						"y_start":0.45,
+						"y_offset":-0.068
+					},
+					
+					"list_object":[
+						{
+							"name":"Lat_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"градусы"
+						},
+						{
+							"name":"Times_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Дней"
+						},
+						{
+							"name":"Yers_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":" "
+						},
+						{
+							"name":"Monthe_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":" "
+						},
+						{
+							"name":"Day_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":" "
+						}			
+					]
+				}
+			]
+		}
+	]	
+}

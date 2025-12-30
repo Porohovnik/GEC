@@ -1,0 +1,326 @@
+{
+	"name_win":"name_win_",
+	
+	"list_object":[
+		{
+			"name":"SOLAR_optimal_A_solar",
+			"list":"optimal_A",
+			"type":"CeBoxElement",
+
+			"x":0.2,
+			"y":-0.05,
+			"z":0.0,
+			"scale_x":1.58,
+			"scale_y":1.7,
+			"scale_z":1.0,
+
+			"them":"",
+			"list_object":[
+				{
+					"name":"optimal_A_solar_Graf_1",
+					"list":"optimal_A",
+					"type":"CeGraphics",
+
+
+					"x":0.0,
+					"y":0.0,
+					
+					"scale_x":0.7,
+					"scale_y":0.25,
+
+					"Setting_axis":[
+						{
+						"type":1,
+						"font":"fonts/verdana.ttf",
+						"name_axis":"B, гард",
+						"cout_divisions":10,
+						"accurate":0
+						},
+						{
+						"type":0,
+						"font":"fonts/verdana.ttf",
+						"name_axis":"кВт*ч/м^2",
+						"cout_divisions":10,
+						"accurate":0
+						}
+					],
+					
+					"funs_dll":[
+						{
+						"type":"out_data",
+						"name_shared_lib":"DLC\\libkadastr.dll",
+						"name_fun":"set_get_data_interface_graf"
+						}
+					],
+					"them":""
+				},
+				{
+					"name":"optimal_A_solar_down_result",
+					"list":"optimal_A",
+					"type":"CeBottom",
+					
+					"x":-0.235,
+					"y":0.45,
+					"z":0.0,
+					"scale_x":0.4,
+					"scale_y":0.05,
+					"scale_z":1.0,
+					
+					"funs_dll":[
+						{
+						"type":"launch",
+						"name_shared_lib":"DLC\\libkadastr.dll",
+						"name_fun":"get_data_stage_2"
+						}
+					],
+					
+					"them":"",
+					"font":"fonts/verdana.ttf",
+					"text":"Сохранить результат"
+				},
+				{
+					"name":"optimal_A_solar_name_graf_1",
+					"list":"optimal_A",
+					"type":"CeTextField",
+					
+					"x":-0.2,
+					"y":0.144,
+					"z":0.0,
+					"scale_x":0.1,
+					"scale_y":0.028,
+					"scale_z":1.0,
+					
+					"them":"",
+					"font":"fonts/verdana.ttf",
+					"text":"График зависимость прихода сумммарной СР от угла установки ПП:"
+				},
+				{
+					"name":"input_optimal_A_solar_name_parametrs",
+					"list":"optimal_A",
+					"type":"CeBoxElement",
+
+					"x":-0.375,
+					"y":0.225,
+					"z":0.0,
+					"scale_x":0.1,
+					"scale_y":0.15,
+					"scale_z":1.0,
+
+					"them":"",
+					
+					"array_setting":{
+						"scale_y_start":0.3,
+						"scale_x_start":1.0,
+						"x_start":-0.04,
+						"y_start":1.0,
+						"y_offset":-0.35
+					},
+					
+					"list_object":[
+						{
+							"name":"step_B_optimal_s",
+							"list":"optimal_A",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Шаг B для расчёта"
+						},
+						{
+							"name":"step_Azimut_optimal_s",
+							"list":"optimal_A",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Азимут для расчёта"
+						},
+						{
+							"name":"B_optimal_s",
+							"list":"optimal_A",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Оптимальный угол B"
+						},
+						{
+							"name":"Azimut_optimal_s",
+							"list":"optimal_A",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Азимут"
+						}		
+					]
+				},
+				{
+					"name":"input_optimal_A_solar_parametrs",
+					"list":"optimal_A",
+					"type":"CeBoxElement",
+
+					"x":-0.05,
+					"y":0.225,
+					"z":0.0,
+					"scale_x":0.1,
+					"scale_y":0.15,
+					"scale_z":1.0,
+
+					"them":"",
+					
+					"array_setting":{
+						"scale_y_start":0.3,
+						"scale_x_start":1.0,
+						"x_start":-0.04,
+						"y_start":1.0,
+						"y_offset":-0.35
+					},
+
+					"list_object":[
+						{
+							"name":"step_B_optimal_min_s_input",
+							"list":"optimal_A",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"out_data",
+									"name_shared_lib":"DLC\\libkadastr.dll",
+									"name_fun":"set_get_data_interface"
+								},
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libkadastr.dll",
+									"name_fun":"set_data_interface_step"
+								}
+							],
+					
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"5"
+						},
+						{
+							"name":"step_Azimut_optimal_min_s_input",
+							"list":"optimal_A",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"out_data",
+									"name_shared_lib":"DLC\\libkadastr.dll",
+									"name_fun":"set_get_data_interface"
+								},
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libkadastr.dll",
+									"name_fun":"set_data_interface_step"
+								}
+							],
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"180"
+						},						
+						{
+							"name":"B_optimal_input",
+							"list":"optimal_A",
+							"type":"CeTextField",
+							
+							"funs_dll":[
+								{
+									"type":"out_data",
+									"name_shared_lib":"DLC\\libkadastr.dll",
+									"name_fun":"set_get_data_interface"
+								}
+							],
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"-"
+						},
+						{
+							"name":"Azimut_optimal_min_s_input",
+							"list":"optimal_A",
+							"type":"CeTextField",
+							
+							"funs_dll":[
+								{
+									"type":"out_data",
+									"name_shared_lib":"DLC\\libkadastr.dll",
+									"name_fun":"set_get_data_interface"
+								}
+							],
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"-"
+						}			
+					]
+				},
+				{
+					"name":"input_optimal_A_solar_measure_unit",
+					"list":"optimal_A",
+					"type":"CeBoxElement",
+
+					"x":0.05,
+					"y":0.225,
+					"z":0.0,
+					"scale_x":0.1,
+					"scale_y":0.15,
+					"scale_z":1.0,
+
+					"them":"",
+					
+					"array_setting":{
+						"scale_y_start":0.3,
+						"scale_x_start":1.0,
+						"x_start":-0.04,
+						"y_start":1.0,
+						"y_offset":-0.35
+					},
+
+					
+					"list_object":[
+						{
+							"name":"step_B_optimal_s_measure_unit",
+							"list":"optimal_A",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":" "
+						},
+						{
+							"name":"step_Azimut_optimal_s_measure_unit",
+							"list":"optimal_A",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":" "
+						},
+						{
+							"name":"B_optimal_s_measure_unit",
+							"list":"optimal_A",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Град"
+						},
+						{
+							"name":"Azimut_optimal_s_measure_unit",
+							"list":"optimal_A",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Град"
+						}				
+					]
+				}
+			]	
+		}
+	]	
+}

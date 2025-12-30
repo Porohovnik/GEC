@@ -1,0 +1,821 @@
+{
+	"name_win":"name_win_",
+	
+	"list_object":[
+		{
+			"name":"111",
+			"list":"list_1",
+			"type":"CeBottom",
+			
+			"x":-0.3,
+			"y":-10000.8,
+			"z":-0.4,
+			
+			"scale_x":0.4,
+			"scale_y":0.2,
+			
+			"them":"",
+			"font":"fonts/verdana.ttf",
+			"text":" "
+		},
+		{
+			"name":"input_solar",
+			"list":"list_1",
+			"type":"CeBoxElement",
+
+			"x":1000.0,
+			"y":0.0,
+			"z":-0.9,
+			"scale_x":1.2,
+			"scale_y":1.7,
+			"scale_z":1.0,
+
+			"them":"",
+			"path_image":"DLC/pictures/jjj1.png",
+
+			"list_object":[
+				{
+					"name":"name_input_solar2",
+					"list":"list_1",
+					"type":"CeTextField",
+
+					"x":-0.18,
+					"y":0.4,
+					"z":0.0,
+					"scale_x":0.6,
+					"scale_y":0.08,
+					"scale_z":1.0,
+					
+					
+					"them":"",
+					"font":"fonts/verdana.ttf",
+					"text":"Фотоэлектрическая установка"
+				},
+				{
+				
+					"name":"close_input_solar",
+					"list":"list_1",
+					"type":"CeBottom",
+
+					"x":0.448,
+					"y":0.42,
+					"z":-0.1,
+					"scale_x":0.06,
+					"scale_y":0.08,
+					"scale_z":1.0,
+					
+					"funs_object_change":[
+						{
+							"type":"change_position",
+							"name_object":"input_solar",
+							"type_button":"lift",
+
+							"setting":{
+								"x_repite":-1000.0
+							}		
+						}
+					],
+					
+					"them":"",
+					"font":"fonts/verdana.ttf",
+					"path_image":"DLC/pictures/closed.png",
+					"text":" "
+				},
+				{
+					"name":"input_solar_name_parametrs",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"x":-0.15,
+					"y":-0.05,
+					"z":0.0,
+					"scale_x":0.55,
+					"scale_y":0.65,
+					"scale_z":1.0,
+
+					"path_image":"DLC/pictures/querty_white.png",
+					"them":"",
+					
+					
+					"array_setting":{
+						"scale_y_start":0.065,
+						"scale_x_start":1.0,
+						"x_start":-0.04,
+						"y_start":0.45,
+						"y_offset":-0.068
+					},
+					
+					"list_object":[
+						{
+							"name":"U_xx",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Напряжение холостого хода"
+						},
+						{
+							"name":"I_kz",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Ток короткого замыкания"
+						},
+						{
+							"name":"U_max",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Напряжение в точке максимальной мощности"
+						},
+						{
+							"name":"I_max",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Ток в точке максимальной мощности"
+						},
+						{
+							"name":"K_T_xx",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Температурный коэффициент ХХ"
+						},
+						{
+							"name":"K_T_kz",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Температурный коэффициент тока КЗ"
+						},
+						{
+							"name":"n_PMT",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Количество ФЭУ"
+						},
+						{
+							"name":"PMT_cost",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Стоимость ФЭУ"
+						},
+						{
+							"name":"СMP_cost",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Стоимость СМР"
+						},
+						{
+							"name":"PMT_year_old_max",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Срок службы ФЭУ"
+						},
+						{
+							"name":"N_yst",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Единичная мощность"
+						},
+						{
+							"name":"A_PMT",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Угол наклона ФЭУ"
+						},
+						{
+							"name":"ALBEDO",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Альбедо подстилающей поверхности"
+						},
+						{
+							"name":"KPD_inv",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"КПД инвертора"
+						},
+						{
+							"name":"Inv_cost",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Стоимость инвертора"
+						},
+						{
+							"name":"Inv_year_old_max",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Срок службы инвертора"
+						}						
+					]
+				},
+				{
+					"name":"input_solar_parametrs",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"x":0.2,
+					"y":-0.05,
+					
+					"scale_x":0.12,
+					"scale_y":0.65,
+					"scale_z":1.0,
+
+					"them":"",
+					"path_image":"DLC/pictures/querty_white.png",
+					
+					"array_setting":{
+						"scale_y_start":0.065,
+						"scale_x_start":1.0,
+						"y_start":0.45,
+						"y_offset":-0.068
+					},
+					
+					"list_object":[
+						{
+							"name":"U_xx_input",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface"
+								}
+							],
+							
+							"namber_setting":{
+								"min":0.0,
+								"max":100.0,
+								"accurate":2
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"00000.00"
+						},
+						{
+							"name":"I_kz_input",
+							"list":"list_1", 
+							"type":"CeInputText",
+
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface"
+								}
+							],
+
+							"namber_setting":{
+								"min":0.0,
+								"max":20.0,
+								"accurate":2
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"00000.00"
+						},
+						{
+							"name":"U_max_input",
+							"list":"list_1",
+							"type":"CeInputText",
+
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface"
+								}
+							],
+
+							"namber_setting":{
+								"min":0.0,
+								"max":100.0,
+								"accurate":2
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"00000.00"
+						},
+						{
+							"name":"I_max_input",
+							"list":"list_1",
+							"type":"CeInputText",
+
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface"
+								}
+							],
+
+							"namber_setting":{
+								"min":0.0,
+								"max":20.0,
+								"accurate":2
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"00000.00"
+						},
+						{
+							"name":"K_T_xx_input",
+							"list":"list_1",
+							"type":"CeInputText",
+
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface"
+								}
+							],
+
+							"namber_setting":{
+								"min":-1.0,
+								"max":1.0,
+								"accurate":5
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"00000.00"
+						},
+						{
+							"name":"K_T_kz_input",
+							"list":"list_1",
+							"type":"CeInputText",
+
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface"
+								}
+							],
+
+							"namber_setting":{
+								"min":-1.0,
+								"max":1.0,
+								"accurate":5
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"00000.00"
+						},
+						{
+							"name":"n_PMT_input",
+							"list":"list_1",
+							"type":"CeInputText",
+
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface"
+								}
+							],
+
+							"namber_setting":{
+								"min":0.0,
+								"max":1000000.0,
+								"accurate":0
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"00000.00"
+						},
+						{
+							"name":"PMT_cost_input",
+							"list":"list_1",
+							"type":"CeInputText",
+
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface"
+								}
+							],
+
+							"namber_setting":{
+								"min":0.0,
+								"max":50000.0,
+								"accurate":0
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"00000.00"
+						},
+						{
+							"name":"СMP_cost_input",
+							"list":"list_1",
+							"type":"CeInputText",
+
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface"
+								}
+							],
+
+							"namber_setting":{
+								"min":0.0,
+								"max":1.0,
+								"accurate":2
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"00000.00"
+						},
+						{
+							"name":"PMT_year_old_max_input",
+							"list":"list_1",
+							"type":"CeInputText",
+
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface"
+								}
+							],
+
+							"namber_setting":{
+								"min":0.0,
+								"max":50.0,
+								"accurate":0
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"00000.00"
+						},
+						{
+							"name":"N_yst_input",
+							"list":"list_1",
+							"type":"CeInputText",
+
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface"
+								}
+							],
+
+							"namber_setting":{
+								"min":0.0,
+								"max":1.0,
+								"accurate":3
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"00000.00"
+						},
+						{
+							"name":"A_PMT_input",
+							"list":"list_1",
+							"type":"CeInputText",
+
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface"
+								}
+							],
+
+							"namber_setting":{
+								"min":0.0,
+								"max":180.0,
+								"accurate":0
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"00000.00"
+						},
+						{
+							"name":"ALBEDO_input",
+							"list":"list_1",
+							"type":"CeInputText",
+
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface"
+								}
+							],
+
+							"namber_setting":{
+								"min":0.0,
+								"max":50.0,
+								"accurate":3
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"00000.00"
+						},
+						{
+							"name":"KPD_inv_input",
+							"list":"list_1",
+							"type":"CeInputText",
+
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface"
+								}
+							],
+
+							"namber_setting":{
+								"min":0.0,
+								"max":1.0,
+								"accurate":2
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"00000.00"
+						},
+						{
+							"name":"Inv_cost_input",
+							"list":"list_1",
+							"type":"CeInputText",
+
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface"
+								}
+							],
+
+							"namber_setting":{
+								"min":0.0,
+								"max":50000.0,
+								"accurate":0
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"00000.00"
+						},
+						{
+							"name":"Inv_year_old_max_input",
+							"list":"list_1",
+							"type":"CeInputText",
+
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface"
+								}
+							],
+							
+							"namber_setting":{
+								"min":0.0,
+								"max":50.0,
+								"accurate":0
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"00000.00"
+						}						
+					]
+				},
+				{
+					"name":"input_solar_measure_unit",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"x":0.325,
+					"y":-0.05,
+					"z":0.0,
+					"scale_x":0.12,
+					"scale_y":0.65,
+					"scale_z":1.0,
+
+					"them":"",
+					"path_image":"DLC/pictures/querty_white.png",
+					
+					"array_setting":{
+						"scale_y_start":0.065,
+						"scale_x_start":1.0,
+						"x_start":-0.04,
+						"y_start":0.45,
+						"y_offset":-0.068
+					},
+					
+					"list_object":[
+						{
+							"name":"U_xx_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"В"
+						},
+						{
+							"name":"I_kz_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"А"
+						},
+						{
+							"name":"U_max_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"В"
+						},
+						{
+							"name":"I_max_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"А"
+						},
+						{
+							"name":"K_T_xx_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"В/К"
+						},
+						{
+							"name":"K_T_kz_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"А/К"
+						},
+						{
+							"name":"n_PMT_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"шт"
+						},
+						{
+							"name":"PMT_cost_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"руб/шт"
+						},
+						{
+							"name":"СMP_cost_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"о.е."
+						},
+						{
+							"name":"PMT_year_old_max_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"лет"
+						},
+						{
+							"name":"N_yst_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"кВт"
+						},
+						{
+							"name":"A_PMT_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"градусов"
+						},
+						{
+							"name":"ALBEDO_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"о.е. "
+						},
+						{
+							"name":"KPD_inv_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"о.е. "
+						},
+						{
+							"name":"Inv_cost_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"руб/кВт"
+						},
+						{
+							"name":"Inv_year_old_max_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"лет"
+						}						
+					]
+				}
+			]
+		}
+	]	
+}

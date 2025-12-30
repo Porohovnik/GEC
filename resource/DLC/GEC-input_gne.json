@@ -1,0 +1,369 @@
+{
+	"name_win":"name_win_",
+	
+	"list_object":[
+		{
+			"name":"555",
+			"list":"list_1",
+			"type":"CeBottom",
+			
+			"x":-0.3,
+			"y":-10000.8,
+			"z":-0.4,
+			
+			"scale_x":0.4,
+			"scale_y":0.2,
+			
+			"them":"",
+			"font":"fonts/verdana.ttf",
+			"text":" "
+		},
+		{
+			"name":"input_gne",
+			"list":"list_1",
+			"type":"CeBoxElement",
+
+			"x":1000.0,
+			"y":0.0,
+			"z":-0.9,
+			"scale_x":1.2,
+			"scale_y":1.7,
+			"scale_z":1.0,
+
+			"them":"",
+			"path_image":"DLC/pictures/jjj1.png",
+
+			"list_object":[
+				{
+					"name":"name_input_gne",
+					"list":"list_1",
+					"type":"CeTextField",
+
+					"x":-0.4,
+					"y":0.4,
+					"z":0.0,
+					"scale_x":0.1,
+					"scale_y":0.1,
+					"scale_z":1.0,
+					
+					
+					"them":"",
+					"font":"fonts/verdana.ttf",
+					"text":"Система накопления энергии"
+				},
+				{
+				
+					"name":"close_input_gne",
+					"list":"list_1",
+					"type":"CeBottom",
+
+					"x":0.448,
+					"y":0.42,
+					"z":-0.1,
+					"scale_x":0.06,
+					"scale_y":0.08,
+					"scale_z":1.0,
+					
+					"funs_object_change":[
+						{
+							"type":"change_position",
+							"name_object":"input_gne",
+							"type_button":"lift",
+
+							"setting":{
+								"x_repite":-1000.0
+							}		
+						}
+					],
+					
+					"them":"",
+					"font":"fonts/verdana.ttf",
+					"path_image":"DLC/pictures/closed.png",
+					"text":" "
+				},
+				{
+					"name":"input_gne_name_parametrs",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"x":-0.15,
+					"y":-0.05,
+					"z":0.0,
+					"scale_x":0.55,
+					"scale_y":0.65,
+					"scale_z":1.0,
+
+					"them":"",
+					"path_image":"DLC/pictures/querty_white.png",
+					
+					"array_setting":{
+						"scale_y_start":0.065,
+						"scale_x_start":1.0,
+						"x_start":-0.04,
+						"y_start":0.45,
+						"y_offset":-0.068
+					},
+					
+					"list_object":[
+						{
+							"name":"KPD_VCAE",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"ВСНЭ:КПД"
+						},
+						{
+							"name":"KPD_LITI-ON",
+							"list":"list_1",
+							"type":"CeTextField",
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"ЛИА:КПД"
+						},
+						{
+							"name":"KPD_CuperK",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"СК:КПД"
+						},
+						{
+							"name":"cost_VCAE",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"СНЭ:cтоймость"
+						},
+						{
+							"name":"year_old_max_VCAE",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"СНЭ:Срок службы"
+						}		
+					]
+				},
+				{
+					"name":"input_gne_parametrs",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"x":0.2,
+					"y":-0.05,
+					
+					"scale_x":0.12,
+					"scale_y":0.65,
+					"scale_z":1.0,
+
+					"them":"",
+					"path_image":"DLC/pictures/querty_white.png",
+					
+					"array_setting":{
+						"scale_y_start":0.065,
+						"scale_x_start":1.0,
+						"y_start":0.45,
+						"y_offset":-0.068
+					},
+					
+					"list_object":[
+						{
+							"name":"KPD_VCAE_input",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface"
+								}
+							],
+							
+							"namber_setting":{
+								"min":0.0,
+								"max":1.0,
+								"accurate":2
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"00000.00"
+						},
+						{
+							"name":"KPD_LITI-ON_input",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface"
+								}
+							],
+							
+							"namber_setting":{
+								"min":0.0,
+								"max":1.0,
+								"accurate":2
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"00000.00"
+						},
+						{
+							"name":"KPD_CuperK_input",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface"
+								}
+							],
+							
+							"namber_setting":{
+								"min":0.0,
+								"max":1.0,
+								"accurate":2
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"00000.00"
+						},
+						{
+							"name":"cost_VCAE_input",
+							"list":"list_1",
+							"type":"CeInputText",
+
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface"
+								}
+							],
+							
+							"namber_setting":{
+								"min":0.0,
+								"max":100000000.0,
+								"accurate":0
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"00000.00"
+						},
+						{
+							"name":"year_old_max_VCAE_input",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface"
+								}
+							],
+							
+							"namber_setting":{
+								"min":0.0,
+								"max":50.0,
+								"accurate":0
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"00000.00"
+						}				
+					]
+				},
+				{
+					"name":"input_gne_measure_unit",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"x":0.325,
+					"y":-0.05,
+					"z":0.0,
+					"scale_x":0.12,
+					"scale_y":0.65,
+					"scale_z":1.0,
+
+					"them":"",
+					"path_image":"DLC/pictures/querty_white.png",
+					
+					"array_setting":{
+						"scale_y_start":0.065,
+						"scale_x_start":1.0,
+						"x_start":-0.04,
+						"y_start":0.45,
+						"y_offset":-0.068
+					},
+					
+					"list_object":[
+						{
+							"name":"KPD_VCAE_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"о.е"
+						},
+						{
+							"name":"KPD_LITI-ON_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"о.е"
+						},
+						{
+							"name":"KPD_CuperK_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"о.е"
+						},
+						{
+							"name":"cost_VCAE_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"руб/кВт"
+						},
+						{
+							"name":"year_old_max_VCAE_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"лет"
+						}						
+					]
+				}
+			]
+		}
+	]	
+}

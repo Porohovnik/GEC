@@ -1,0 +1,944 @@
+{
+	"name_win":"name_win_",
+	
+	"list_object":[
+
+		{
+			"name":"GEC-main",
+			"list":"list_1",
+			"type":"CeBoxElement",
+					
+			"them":"",
+			
+			"list_object":[
+				{
+					"name":"inerf",
+					"list":"list_1",
+					"type":"CeBoxElement",
+					
+					"z":-0.1,
+
+					"scale_x":2.0,
+					"scale_y":2.0,
+					
+					"them":"",
+					"path_image":"DLC/pictures/backgraund.png"
+				},
+				{
+					"name":"bottom_settings",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"x":0.64,
+					"y":0.835,
+					"z":-0.8,
+					"scale_x":0.48,
+					"scale_y":0.108,
+					"scale_z":1.0,
+
+					"them":"",
+					"path_image":"DLC/pictures/querty_white.png",
+					
+					"array_setting":{
+						"scale_x_start":0.13,
+						"scale_y_start":0.9,
+						
+						"x_start":0.4,
+						"y_start":0.0,
+						"x_offset":-0.15
+					},
+					
+					"list_object":[
+						{
+							"name":"graf_button",
+							"list":"list_1",
+							"type":"CeBottom",
+							
+							"funs_object_change":[
+								{
+									"type":"change_position",
+									"name_object":"GEC-graf",
+									"type_button":"lift",
+
+									"setting":{
+										"z_repite":-1000.0
+									}		
+								},
+								{
+									"type":"change_position",
+									"name_object":"GEC-main",
+									"type_button":"lift",
+
+									"setting":{
+										"z_repite":1000.0
+									}		
+								}
+							],
+							
+							"them":"",
+							"path_image":"DLC/pictures/graf_icon.png",
+							"font":"fonts/verdana.ttf",
+							"text":" "
+						},
+						{
+							"name":"table_model_button",
+							"list":"list_1",
+							"type":"CeBottom",
+							
+							"funs_object_change":[
+								{
+									"type":"change_position",
+									"name_object":"GEC-table",
+									"type_button":"lift",
+
+									"setting":{
+										"z_repite":-1000.0
+									}		
+								},
+								{
+									"type":"change_position",
+									"name_object":"GEC-main",
+									"type_button":"lift",
+
+									"setting":{
+										"z_repite":1000.0
+									}		
+								}
+							],
+							
+							"them":"",
+							"path_image":"DLC/pictures/icon_table.png",
+							"font":"fonts/verdana.ttf",
+							"text":" "
+						},
+						{
+							"name":"download",
+							"list":"list_1",
+							"type":"CeBottom",
+							
+							"funs_dll":[
+								{
+								"type":"launch",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"loading_data"
+								}
+							],
+							"them":"",
+							"path_image":"DLC/pictures/down.png",
+							"font":"fonts/verdana.ttf",
+							"text":" "
+						},
+						{
+							"name":"download_template",
+							"list":"list_1",
+							"type":"CeBottom",
+							
+							"funs_dll":[
+								{
+								"type":"launch",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"down_template"
+								}
+							],
+							
+							"them":"",
+							"path_image":"DLC/pictures/template.png",
+							"font":"fonts/verdana.ttf",
+							"text":" "
+						},
+						{
+							"name":"setting_model_button",
+							"list":"list_1",
+							"type":"CeBottom",
+							
+							"funs_object_change":[
+								{
+									"type":"change_position",
+									"name_object":"input_setting",
+									"type_button":"lift",
+
+									"setting":{
+										"x_repite":-1000.0
+									}		
+								}
+							],
+							
+							"them":"",
+							"path_image":"DLC/pictures/setting_model_button.png",
+							"font":"fonts/verdana.ttf",
+							"text":" "
+						},
+						{
+							"name":"effect_model_button",
+							"list":"list_1",
+							"type":"CeBottom",
+							
+							"funs_object_change":[
+								{
+									"type":"change_position",
+									"name_object":"input_calc_1",
+									"type_button":"lift",
+
+									"setting":{
+										"x_repite":-1000.0
+									}		
+								}
+							],
+							"them":"",
+							"path_image":"DLC/pictures/scanmatik.png",
+							"font":"fonts/verdana.ttf",
+							"text":" "
+						},
+						{
+							"name":"NASA_model_button",
+							"list":"list_1",
+							"type":"CeBottom",
+							
+							"funs_utiliti_launch":[
+								{
+									"type":"change_list",
+									"type_button":"lift",
+									
+									"set_status":"NOVISEBLE",
+									"name_list" :"list_1"
+								}
+							],
+							
+							"them":"",
+							"path_image":"DLC/pictures/NASA.png",
+							"font":"fonts/verdana.ttf",
+							"text":" "
+						},
+						{
+							"name":"reset_button",
+							"list":"list_1",
+							"type":"CeBottom",
+							
+							
+							"them":"",
+							"path_image":"DLC/pictures/reset.png",
+							"font":"fonts/verdana.ttf",
+							"text":" "
+						},
+						{
+							"name":"start_button",
+							"list":"list_1",
+							"type":"CeBottom",
+							
+							"funs_dll":[
+								{
+								"type":"launch",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"model_launch_s"
+								}
+							],
+							
+							"them":"",
+							"path_image":"DLC/pictures/start.png",
+							"font":"fonts/verdana.ttf",
+							"text":" "
+						}
+						
+					]
+				},
+				{
+					"name":"accumulators",
+					"list":"list_1",
+					"type":"CeBottom",
+					
+					"x":-0.3,
+					"y":-0.8,
+					"z":-0.4,
+					
+					"scale_x":0.4,
+					"scale_y":0.2,
+					
+					"funs_object_change":[
+						{
+							"type":"change_position",
+							"name_object":"line_leaft_0",
+							"type_button":"right",
+							
+							"setting":{
+								"x_repite":1000.0
+							}		
+						},
+						{
+							"type":"change_position",
+							"name_object":"input_gne",
+							"type_button":"lift",
+
+							"setting":{
+								"x_repite":-1000.0
+							}		
+						}
+					],
+					
+					"id":"0",
+					
+					"funs_dll":[
+						{
+						"type":"launch",
+						"name_shared_lib":"DLC\\libGEC.dll",
+						"name_fun":"set_choise",
+						"type_button":"right"
+						}
+					],
+					
+					"them":"",
+					"path_image":"DLC/pictures/frame/GNE_frame.png",
+					"font":"fonts/verdana.ttf",
+					"text":" "
+				},
+				{
+					"name":"GEU",
+					"list":"list_1",
+					"type":"CeBottom",
+					
+					"x":-0.3,
+					"y":-0.4,
+					"z":-0.4,
+					
+					"scale_x":0.4,
+					"scale_y":0.2,
+					
+					"funs_object_change":[
+						{
+							"type":"change_position",
+							"name_object":"line_leaft_1",
+							"type_button":"right",
+							
+							"setting":{
+								"x_repite":1000.0
+							}	
+						},
+						{
+							"type":"change_position",
+							"name_object":"input_geu",
+							"type_button":"lift",
+
+							"setting":{
+								"x_repite":-1000.0
+							}		
+						}
+					],
+					
+					"id":"1",
+					
+					"funs_dll":[
+						{
+						"type":"launch",
+						"name_shared_lib":"DLC\\libGEC.dll",
+						"name_fun":"set_choise",
+						"type_button":"right"
+						}
+					],
+							
+					
+					
+					"them":"",
+					"path_image":"DLC/pictures/frame/GEU_frame.png",
+					"font":"fonts/verdana.ttf",
+					"text":" "
+				},
+				{
+					"name":"object",
+					"list":"list_1",
+					"type":"CeBottom",
+					
+					"x":-0.3,
+					"y":-0.15,
+					"z":-0.4,
+					
+					"scale_x":0.4,
+					"scale_y":0.2,
+					
+					"funs_object_change":[
+						{
+							"type":"change_position",
+							"name_object":"line_leaft_2",
+							"type_button":"right",
+							
+							"setting":{
+								"x_repite":1000.0
+							}		
+						},					
+						{
+							"type":"change_position",
+							"name_object":"input_veu",
+							"type_button":"lift",
+
+							"setting":{
+								"x_repite":-1000.0
+							}		
+						}
+					],
+					
+					"id":"2",
+					
+					"funs_dll":[
+						{
+						"type":"launch",
+						"name_shared_lib":"DLC\\libGEC.dll",
+						"name_fun":"set_choise",
+						"type_button":"right"
+						}
+					],
+					
+					"them":"",
+					"path_image":"DLC/pictures/frame/VEU_frame.png",
+					"font":"fonts/verdana.ttf",
+					"text":" "
+				},
+				{
+					"name":"solar_panel",
+					"list":"list_1",
+					"type":"CeBottom",
+					
+					"x":-0.3,
+					"y":0.1,
+					"z":-0.4,
+					
+					"scale_x":0.4,
+					"scale_y":0.2,
+					
+					"funs_object_change":[
+						{
+							"type":"change_position",
+							"name_object":"line_leaft_3",
+							"type_button":"right",
+							
+							"setting":{
+								"x_repite":1000.0
+							}		
+						},
+						{
+							"type":"change_position",
+							"name_object":"input_solar",
+							"type_button":"lift",
+
+							"setting":{
+								"x_repite":-1000.0
+							}		
+						}
+					],
+					
+					"id":"3",
+					
+					"funs_dll":[
+						{
+						"type":"launch",
+						"name_shared_lib":"DLC\\libGEC.dll",
+						"name_fun":"set_choise",
+						"type_button":"right"
+						}
+					],
+					
+					"them":"",
+					"path_image":"DLC/pictures/frame/FEU_frame.png",
+					"font":"fonts/verdana.ttf",
+					"text":" "
+				},
+				{
+					"name":"diesel_generator",
+					"list":"list_1",
+					"type":"CeBottom",
+					
+					"x":-0.3,
+					"y":0.35,
+					"z":-0.4,
+					
+					"scale_x":0.4,
+					"scale_y":0.2,
+					
+					"funs_object_change":[
+						{
+							"type":"change_position",
+							"name_object":"line_leaft_4",
+							"type_button":"right",
+							
+							"setting":{
+								"x_repite":1000.0
+							}		
+						},
+						{
+							"type":"change_position",
+							"name_object":"input_dgy",
+							"type_button":"lift",
+
+							"setting":{
+								"x_repite":-1000.0
+							}		
+						}	
+					],
+					
+					"id":"4",
+					
+					"funs_dll":[
+						{
+						"type":"launch",
+						"name_shared_lib":"DLC\\libGEC.dll",
+						"name_fun":"set_choise",
+						"type_button":"right"
+						}
+					],
+					
+					"them":"",
+					"path_image":"DLC/pictures/frame/DGY_fraem.png",
+					"font":"fonts/verdana.ttf",
+					"text":" "
+				},
+				{
+					"name":"PEE",
+					"list":"list_1",
+					"type":"CeBottom",
+					
+					"x":-0.6,
+					"y":0.6,
+					"z":-0.4,
+					
+					"scale_x":0.4,
+					"scale_y":0.2,
+					
+					
+					"them":"",
+					"path_image":"DLC/pictures/frame/PEE_frame.png",
+					"font":"fonts/verdana.ttf",
+					"text":" "
+				},
+				{
+					"name":"NTE_object",
+					"list":"list_1",
+					"type":"CeBottom",
+					
+					"x":0.4,
+					"y":-0.6,
+					"z":-0.4,
+					
+					"scale_x":0.4,
+					"scale_y":0.2,
+					
+					"funs_object_change":[
+						{
+							"type":"change_position",
+							"name_object":"line_leaft_5",
+							"type_button":"right",
+							
+							"setting":{
+								"x_repite":1000.0
+							}		
+						},
+						{
+							"type":"change_position",
+							"name_object":"input_nte",
+							"type_button":"lift",
+
+							"setting":{
+								"x_repite":-1000.0
+							}		
+						}
+					],
+					
+					"id":"6",
+					
+					"funs_dll":[
+						{
+						"type":"launch",
+						"name_shared_lib":"DLC\\libGEC.dll",
+						"name_fun":"set_choise",
+						"type_button":"right"
+						}
+					],
+					
+					"them":"",
+					"path_image":"DLC/pictures/frame/NTE_frame.png",
+					"font":"fonts/verdana.ttf",
+					"text":" "
+				},
+				{
+					"name":"invertor",
+					"list":"list_1",
+					"type":"CeBottom",
+					
+					"x":0.4,
+					"y":-0.2,
+					"z":-0.4,
+					
+					"scale_x":0.4,
+					"scale_y":0.2,
+					
+					"funs_object_change":[
+						{
+							"type":"change_position",
+							"name_object":"line_leaft_6",
+							"type_button":"right",
+							
+							"setting":{
+								"x_repite":1000.0
+							}
+						},
+						{
+							"type":"change_position",
+							"name_object":"input_ek",
+							"type_button":"lift",
+
+							"setting":{
+								"x_repite":-1000.0
+							}		
+						}					
+					],
+					
+					"id":"7",
+					
+					"funs_dll":[
+						{
+						"type":"launch",
+						"name_shared_lib":"DLC\\libGEC.dll",
+						"name_fun":"set_choise",
+						"type_button":"right"
+						}
+					],
+					
+					"them":"",
+					"path_image":"DLC/pictures/frame/EK__frame.png",
+					"font":"fonts/verdana.ttf",
+					"text":" "
+				},
+				{
+					"name":"mpei",
+					"list":"list_1",
+					"type":"CeBoxElement",
+					
+					"x":-0.8,
+					"y":0.8,
+					"z":-0.9,
+					
+					"scale_x":0.2,
+					"scale_y":0.2,
+					
+					"them":"",
+					"path_image":"DLC/pictures/logo1.png",
+					"font":"fonts/verdana.ttf",
+					"text":" "
+				},
+				{
+					"name":"time_data",
+					"list":"list_1",
+					"type":"CeBoxElement",
+					
+					"x":0.05,
+					"y":0.78,
+					"z":-0.8,
+					
+					"scale_x":0.3,
+					"scale_y":0.2,
+					
+					"them":"",
+					"path_image":"DLC/pictures/rect.png",
+					"font":"fonts/verdana.ttf",
+					"text":" ",
+					
+					"list_object":[
+						{
+							"name":"start_time",
+							"list":"list_1",
+							"type":"CeTextField",
+							
+							"x":-0.03,
+							"y":0.25,
+							"z":0.0,
+							
+							"scale_x":0.95,
+							"scale_y":0.4,
+							
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"main_parametr"
+								}
+							],
+							
+							"them":"",
+							"path_image":"DLC/pictures/graf_icon.png",
+							"font":"fonts/verdana.ttf",
+							"text":"start : 2020.07.01"
+						},
+						{
+							"name":"end_time",
+							"list":"list_1",
+							"type":"CeTextField",
+							
+							"x":-0.03,
+							"y":-0.25,
+							"z":0.0,
+							
+							"scale_x":0.95,
+							"scale_y":0.4,
+
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"main_parametr"
+								}
+							],
+							
+							"them":"",
+							"path_image":"DLC/pictures/icon_table.png",
+							"font":"fonts/verdana.ttf",
+							"text":"finish: 2020.07.02"
+						}
+					]
+				},
+				{
+					"name":"File_name_p",
+					"list":"list_1",
+					"type":"CeTextField",
+					
+					"x":-0.5,
+					"y":0.83,
+					"z":-0.8,
+					
+					"scale_x":0.3,
+					"scale_y":0.08,
+					
+					"them":"",
+					"path_image":"DLC/pictures/icon_table.png",
+					"font":"fonts/verdana.ttf",
+					"text":"Текущий файл загрузки:"
+				},
+				{
+					"name":"CCT_object",
+					"list":"list_1",
+					"type":"CeBottom",
+					
+					"x":0.4,
+					"y":0.2,
+					"z":-0.4,
+					
+					"scale_x":0.4,
+					"scale_y":0.2,
+					
+					"funs_object_change":[
+						{
+						"type":"change_position",
+						"name_object":"line_leaft_7",
+						"type_button":"right",
+						
+							"setting":{
+								"x_repite":1000.0
+							}		
+						},
+						{
+							"type":"change_position",
+							"name_object":"input_cct",
+							"type_button":"lift",
+
+							"setting":{
+								"x_repite":-1000.0
+							}		
+						}
+					],
+					
+					"id":"8",
+					
+					"funs_dll":[
+						{
+						"type":"launch",
+						"name_shared_lib":"DLC\\libGEC.dll",
+						"name_fun":"set_choise",
+						"type_button":"right"
+						}
+					],
+					"them":"",
+					"path_image":"DLC/pictures/frame/SST_frame.png",
+					"font":"fonts/verdana.ttf",
+					"text":" "
+				},
+				{
+					"name":"PTE",
+					"list":"list_1",
+					"type":"CeBottom",
+					
+					"x":0.7,
+					"y":0.6,
+					"z":-0.4,
+					
+					"scale_x":0.4,
+					"scale_y":0.2,
+					
+					"them":"",
+					"path_image":"DLC/pictures/frame/PTE_frame.png",
+					"font":"fonts/verdana.ttf",
+					"text":" "
+				},
+				{
+					"name":"line_gorigont_0",
+					"list":"list_1",
+					"type":"CeBoxElement",
+					
+					"x":0.75,
+					"y":-0.06,
+					"z":-0.6,
+
+					"scale_x":0.02,
+					"scale_y":1.12,
+					
+					"path_image":"DLC/pictures/black_texture.png",
+					"them":""
+				},
+				{
+					"name":"line_gorigont_1",
+					"list":"list_1",
+					"type":"CeBoxElement",
+					
+					"x":0.05,
+					"y":-0.24,
+					"z":-0.6,
+
+					"scale_x":0.02,
+					"scale_y":1.16,
+					
+					"path_image":"DLC/pictures/black_texture.png",
+					"them":""
+				},
+				{
+					"name":"line_gorigont_2",
+					"list":"list_1",
+					"type":"CeBoxElement",
+					
+					"x":-0.65,
+					"y":-0.15,
+					"z":-0.6,
+
+					"scale_x":0.02,
+					"scale_y":1.3,
+					
+					"path_image":"DLC/pictures/black_texture.png",
+					"them":""
+				},
+				{
+					"name":"line_leaft_0",
+					"list":"list_1",
+					"type":"CeBoxElement",
+					
+					"x":-0.3,
+					"y":-0.8,
+					"z":-0.4,
+					
+					"scale_x":0.72,
+					"scale_y":0.04,
+					
+					"path_image":"DLC/pictures/black_texture.png",
+					"them":""
+				},
+				{
+					"name":"line_leaft_1",
+					"list":"list_1",
+					"type":"CeBoxElement",
+					
+					"x":-0.3,
+					"y":-0.4,
+					"z":-0.4,
+					
+					"scale_x":0.72,
+					"scale_y":0.04,
+					
+					"path_image":"DLC/pictures/black_texture.png",
+					"them":""
+				},
+				{
+					"name":"line_leaft_2",
+					"list":"list_1",
+					"type":"CeBoxElement",
+					
+					"x":-0.3,
+					"y":-0.15,
+					"z":-0.4,
+					
+					"scale_x":0.72,
+					"scale_y":0.04,
+					
+					"path_image":"DLC/pictures/black_texture.png",
+					"them":""
+				},
+				{
+					"name":"line_leaft_3",
+					"list":"list_1",
+					"type":"CeBoxElement",
+					
+					"x":-0.3,
+					"y": 0.1,
+					"z":-0.4,
+					
+					"scale_x":0.72,
+					"scale_y":0.04,
+					
+					"path_image":"DLC/pictures/black_texture.png",
+					"them":""
+				},
+				{
+					"name":"line_leaft_4",
+					"list":"list_1",
+					"type":"CeBoxElement",
+					
+					"x":-0.3,
+					"y": 0.35,
+					"z":-0.4,
+					
+					"scale_x":0.72,
+					"scale_y":0.04,
+					
+					"path_image":"DLC/pictures/black_texture.png",
+					"them":""
+				},
+				{
+					"name":"line_leaft_5",
+					"list":"list_1",
+					"type":"CeBoxElement",
+					
+					"x":0.4,
+					"y":-0.6,
+					"z":-0.4,
+					
+					"scale_x":0.72,
+					"scale_y":0.04,
+					
+					"path_image":"DLC/pictures/black_texture.png",
+					"them":""
+				},
+				{
+					"name":"line_leaft_6",
+					"list":"list_1",
+					"type":"CeBoxElement",
+					
+					"x":0.4,
+					"y":-0.2,
+					"z":-0.4,
+					
+					"scale_x":0.72,
+					"scale_y":0.04,
+					
+					"path_image":"DLC/pictures/black_texture.png",
+					"them":""
+				},
+				{
+					"name":"line_leaft_7",
+					"list":"list_1",
+					"type":"CeBoxElement",
+					
+					"x":0.4,
+					"y":0.2,
+					"z":-0.4,
+					
+					"scale_x":0.72,
+					"scale_y":0.04,
+					
+					"path_image":"DLC/pictures/black_texture.png",
+					"them":""
+				}
+			]	
+		}
+	]
+}

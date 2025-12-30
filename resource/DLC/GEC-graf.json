@@ -1,0 +1,1331 @@
+{
+	"name_win":"name_win_",
+	
+	"list_object":[
+		{
+			"name":"GEC-graf",
+			"list":"list_1",
+			"type":"CeBoxElement",
+					
+			"z":1000.0,
+					
+			"them":"",
+			
+			"list_object":[
+				{
+					"name":"inerf_graf",
+					"list":"list_1",
+					"type":"CeBoxElement",
+					
+					"z":-0.1,
+
+					"scale_x":2.0,
+					"scale_y":2.0,
+					
+					"them":""
+				},
+				{
+					"name":"Return_graf",
+					"list":"list_1",
+					"type":"CeBottom",
+					
+					"x":0.8,
+					"y":-0.95,
+					"z":-0.4,
+					
+					"scale_x":0.2,
+					"scale_y":0.1,
+					
+					"funs_object_change":[
+						{
+							"type":"change_position",
+							"name_object":"GEC-graf",
+							"type_button":"lift",
+
+							"setting":{
+								"z_repite":-1000.0
+							}		
+						},
+						{
+							"type":"change_position",
+							"name_object":"GEC-main",
+							"type_button":"lift",
+
+							"setting":{
+								"z_repite":1000.0
+							}		
+						}
+					],
+					
+					"them":"",
+					"font":"fonts/verdana.ttf",
+					"text":"Назад"
+				},
+				{
+					"name":"GEC-graf_screnshot",
+					"list":"list_1",
+					"type":"CeBottom",
+
+					"x":-0.8,
+					"y":-0.95,
+					"z":-0.4,
+					
+					"scale_x":0.4,
+					"scale_y":0.1,
+					
+					"funs_dll":[
+						{
+						"type":"launch",
+						"name_shared_lib":"DLC\\libGEC.dll",
+						"name_fun":"set_path_screnshots"
+						}
+					],
+					
+					"funs_utiliti_launch":[	
+						{
+							"type":"screenshot",
+							"type_button":"lift",
+
+							"setting":{
+								"x":-0.98,
+								"y":0.35,
+								"width":0.5,
+								"height":0.64,
+								
+								"path":"PEE",
+								"path_setting":{
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"get_path_screnshots"
+								}
+							}		
+						},
+						{
+							"type":"screenshot",
+							"type_button":"lift",
+
+							"setting":{
+								"x":-0.50,
+								"y":0.35,
+								"width":0.5,
+								"height":0.64,
+								"path":"PTE",
+								"path_setting":{
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"get_path_screnshots"
+								}
+							}		
+						},
+						{
+							"type":"screenshot",
+							"type_button":"lift",
+
+							"setting":{
+								"x":-0.02,
+								"y":0.35,
+								"width":0.5,
+								"height":0.64,
+								"path":"FEU",
+								"path_setting":{
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"get_path_screnshots"
+								}
+							}		
+						},
+						{
+							"type":"screenshot",
+							"type_button":"lift",
+
+							"setting":{
+								"x":0.46,
+								"y":0.35,
+								"width":0.5,
+								"height":0.64,
+								"path":"VEU",
+								"path_setting":{
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"get_path_screnshots"
+								}
+							}		
+						},
+						{
+							"type":"screenshot",
+							"type_button":"lift",
+
+							"setting":{
+								"x":-0.98,
+								"y":-0.27,
+								"width":0.5,
+								"height":0.64,
+								"path":"GEU",
+								"path_setting":{
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"get_path_screnshots"
+								}
+							}		
+						},
+						{
+							"type":"screenshot",
+							"type_button":"lift",
+
+							"setting":{
+								"x":-0.50,
+								"y":-0.27,
+								"width":0.5,
+								"height":0.64,
+								"path":"DGY",
+								"path_setting":{
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"get_path_screnshots"
+								}
+							}		
+						},
+						{
+							"type":"screenshot",
+							"type_button":"lift",
+
+							"setting":{
+								"x":-0.02,
+								"y":-0.27,
+								"width":0.5,
+								"height":0.64,
+								"path":"EK",
+								"path_setting":{
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"get_path_screnshots"
+								}
+							}		
+						},
+						{
+							"type":"screenshot",
+							"type_button":"lift",
+
+							"setting":{
+								"x":0.46,
+								"y":-0.27,
+								"width":0.5,
+								"height":0.64,
+								"path":"SK",
+								"path_setting":{
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"get_path_screnshots"
+								}
+							}		
+						},
+						{
+							"type":"screenshot",
+							"type_button":"lift",
+
+							"setting":{
+								"x":-0.98,
+								"y":-0.89,
+								"width":0.5,
+								"height":0.64,
+								"path":"LIA",
+								"path_setting":{
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"get_path_screnshots"
+								}
+							}		
+						},
+						{
+							"type":"screenshot",
+							"type_button":"lift",
+
+							"setting":{
+								"x":-0.50,
+								"y":-0.89,
+								"width":0.5,
+								"height":0.64,
+								"path":"VSAE",
+								"path_setting":{
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"get_path_screnshots"
+								}
+							}		
+						},
+						{
+							"type":"screenshot",
+							"type_button":"lift",
+
+							"setting":{
+								"x":-0.02,
+								"y":-0.89,
+								"width":0.5,
+								"height":0.64,
+								"path":"CCT",
+								"path_setting":{
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"get_path_screnshots"
+								}
+							}		
+						},
+						{
+							"type":"screenshot",
+							"type_button":"lift",
+
+							"setting":{
+								"x":0.46,
+								"y":-0.89,
+								"width":0.5,
+								"height":0.64,
+								"path":"NTE",
+								"path_setting":{
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"get_path_screnshots"
+								}
+							}		
+						}
+					],
+
+
+					"them":"",
+					"font":"fonts/verdana.ttf",
+					"text":"Сделать скриншот"
+				},
+				{
+					"name":"GEC-graf_name",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"them":"",
+					"path_image":"DLC/pictures/querty_white.png",
+					
+					"array_setting":{
+						"scale_y_start":0.065,
+						"scale_x_start":0.45,
+						
+						"x_start":-0.72,
+						"y_start":0.94,
+						"z_start":-0.2,
+						
+						"x_offset":0.48,
+						"y_offset":-0.62,
+						"collum_cout":4
+					},
+					"list_object":[
+						{
+							"name":"Graf_1_name",
+							"list":"list_1",
+							"type":"CeBottom",
+
+							"funs_object_change":[
+								{
+									"type":"change_position",
+									"name_object":"Graf_1",
+									"type_button":"lift",
+
+									"setting":{
+										"x_new_repite":0.0,
+										"y_new_repite":0.0,
+										"z_new_repite":-0.4,
+										"scale_y_repite":1.0,
+										"scale_x_repite":1.0
+									}									
+								},
+								{
+									"type":"change_position",
+									"name_object":"Graf_1_name",
+									"type_button":"lift",
+
+									"setting":{
+										"x_new_repite":0.0,
+										"y_new_repite":0.9,
+										"z_new_repite":-0.5,
+										"scale_y_repite":0.065,
+										"scale_x_repite":0.45
+									}
+								},
+								{
+								
+									"type":"change_position",
+									"name_object":"inerf_graf",
+									"type_button":"lift",
+
+									"setting":{
+										"z_repite":-0.3
+									}		
+								}
+							],
+
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Потребитель электроэнергии"
+						},
+						{
+							"name":"Graf_2_name",
+							"list":"list_1",
+							"type":"CeBottom",
+
+							"funs_object_change":[
+								{
+									"type":"change_position",
+									"name_object":"Graf_2",
+									"type_button":"lift",
+
+									"setting":{
+										"x_new_repite":0.0,
+										"y_new_repite":0.0,
+										"z_new_repite":-0.4,
+										"scale_y_repite":1.0,
+										"scale_x_repite":1.0
+									}									
+								},
+								{
+									"type":"change_position",
+									"name_object":"Graf_2_name",
+									"type_button":"lift",
+
+									"setting":{
+										"x_new_repite":0.0,
+										"y_new_repite":0.9,
+										"z_new_repite":-0.5,
+										"scale_y_repite":0.065,
+										"scale_x_repite":0.45
+									}
+								},
+								{
+								
+									"type":"change_position",
+									"name_object":"inerf_graf",
+									"type_button":"lift",
+
+									"setting":{
+										"z_repite":-0.3
+									}		
+								}
+							],
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Потребитель тепла"
+						},
+						{
+							"name":"Graf_3_name",
+							"list":"list_1",
+							"type":"CeBottom",
+
+							"funs_object_change":[
+								{
+									"type":"change_position",
+									"name_object":"Graf_3",
+									"type_button":"lift",
+
+									"setting":{
+										"x_new_repite":0.0,
+										"y_new_repite":0.0,
+										"z_new_repite":-0.4,
+										"scale_y_repite":1.0,
+										"scale_x_repite":1.0
+									}									
+								},
+								{
+									"type":"change_position",
+									"name_object":"Graf_3_name",
+									"type_button":"lift",
+
+									"setting":{
+										"x_new_repite":0.0,
+										"y_new_repite":0.9,
+										"z_new_repite":-0.5,
+										"scale_y_repite":0.065,
+										"scale_x_repite":0.45
+									}
+								},
+								{
+								
+									"type":"change_position",
+									"name_object":"inerf_graf",
+									"type_button":"lift",
+
+									"setting":{
+										"z_repite":-0.3
+									}		
+								}
+							],
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Фотоэлектрическая установка"
+						},
+						{
+							"name":"Graf_4_name",
+							"list":"list_1",
+							"type":"CeBottom",
+
+							"funs_object_change":[
+								{
+									"type":"change_position",
+									"name_object":"Graf_4",
+									"type_button":"lift",
+
+									"setting":{
+										"x_new_repite":0.0,
+										"y_new_repite":0.0,
+										"z_new_repite":-0.4,
+										"scale_y_repite":1.0,
+										"scale_x_repite":1.0
+									}									
+								},
+								{
+									"type":"change_position",
+									"name_object":"Graf_4_name",
+									"type_button":"lift",
+
+									"setting":{
+										"x_new_repite":0.0,
+										"y_new_repite":0.9,
+										"z_new_repite":-0.5,
+										"scale_y_repite":0.065,
+										"scale_x_repite":0.45
+									}
+								},
+								{
+								
+									"type":"change_position",
+									"name_object":"inerf_graf",
+									"type_button":"lift",
+
+									"setting":{
+										"z_repite":-0.3
+									}		
+								}
+							],
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Ветроэнергетичская установка"
+						},
+						{
+							"name":"Graf_5_name",
+							"list":"list_1",
+							"type":"CeBottom",
+
+							"funs_object_change":[
+								{
+									"type":"change_position",
+									"name_object":"Graf_5",
+									"type_button":"lift",
+
+									"setting":{
+										"x_new_repite":0.0,
+										"y_new_repite":0.0,
+										"z_new_repite":-0.4,
+										"scale_y_repite":1.0,
+										"scale_x_repite":1.0
+									}									
+								},
+								{
+									"type":"change_position",
+									"name_object":"Graf_5_name",
+									"type_button":"lift",
+
+									"setting":{
+										"x_new_repite":0.0,
+										"y_new_repite":0.9,
+										"z_new_repite":-0.5,
+										"scale_y_repite":0.065,
+										"scale_x_repite":0.45
+									}
+								},
+								{
+								
+									"type":"change_position",
+									"name_object":"inerf_graf",
+									"type_button":"lift",
+
+									"setting":{
+										"z_repite":-0.3
+									}		
+								}
+							],
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Гидроэнергетическая установка"
+						},
+						{
+							"name":"Graf_6_name",
+							"list":"list_1",
+							"type":"CeBottom",
+
+							"funs_object_change":[
+								{
+									"type":"change_position",
+									"name_object":"Graf_6",
+									"type_button":"lift",
+
+									"setting":{
+										"x_new_repite":0.0,
+										"y_new_repite":0.0,
+										"z_new_repite":-0.4,
+										"scale_y_repite":1.0,
+										"scale_x_repite":1.0
+									}									
+								},
+								{
+									"type":"change_position",
+									"name_object":"Graf_6_name",
+									"type_button":"lift",
+
+									"setting":{
+										"x_new_repite":0.0,
+										"y_new_repite":0.9,
+										"z_new_repite":-0.5,
+										"scale_y_repite":0.065,
+										"scale_x_repite":0.45
+									}
+								},
+								{
+								
+									"type":"change_position",
+									"name_object":"inerf_graf",
+									"type_button":"lift",
+
+									"setting":{
+										"z_repite":-0.3
+									}		
+								}
+							],
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Дизель-генераторная установка"
+						},
+						{
+							"name":"Graf_7_name",
+							"list":"list_1",
+							"type":"CeBottom",
+
+							"funs_object_change":[
+								{
+									"type":"change_position",
+									"name_object":"Graf_7",
+									"type_button":"lift",
+
+									"setting":{
+										"x_new_repite":0.0,
+										"y_new_repite":0.0,
+										"z_new_repite":-0.4,
+										"scale_y_repite":1.0,
+										"scale_x_repite":1.0
+									}									
+								},
+								{
+									"type":"change_position",
+									"name_object":"Graf_7_name",
+									"type_button":"lift",
+
+									"setting":{
+										"x_new_repite":0.0,
+										"y_new_repite":0.9,
+										"z_new_repite":-0.5,
+										"scale_y_repite":0.065,
+										"scale_x_repite":0.45
+									}
+								},
+								{
+								
+									"type":"change_position",
+									"name_object":"inerf_graf",
+									"type_button":"lift",
+
+									"setting":{
+										"z_repite":-0.3
+									}		
+								}
+							],
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Электрический котёл"
+						},
+						{
+							"name":"Graf_8_name",
+							"list":"list_1",
+							"type":"CeBottom",
+
+							"funs_object_change":[
+								{
+									"type":"change_position",
+									"name_object":"Graf_8",
+									"type_button":"lift",
+
+									"setting":{
+										"x_new_repite":0.0,
+										"y_new_repite":0.0,
+										"z_new_repite":-0.4,
+										"scale_y_repite":1.0,
+										"scale_x_repite":1.0
+									}									
+								},
+								{
+									"type":"change_position",
+									"name_object":"Graf_8_name",
+									"type_button":"lift",
+
+									"setting":{
+										"x_new_repite":0.0,
+										"y_new_repite":0.9,
+										"z_new_repite":-0.5,
+										"scale_y_repite":0.065,
+										"scale_x_repite":0.45
+									}
+								},
+								{
+								
+									"type":"change_position",
+									"name_object":"inerf_graf",
+									"type_button":"lift",
+
+									"setting":{
+										"z_repite":-0.3
+									}		
+								}
+							],
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Суперконденсатор"
+						},
+						{
+							"name":"Graf_9_name",
+							"list":"list_1",
+							"type":"CeBottom",
+
+							"funs_object_change":[
+								{
+									"type":"change_position",
+									"name_object":"Graf_9",
+									"type_button":"lift",
+
+									"setting":{
+										"x_new_repite":0.0,
+										"y_new_repite":0.0,
+										"z_new_repite":-0.4,
+										"scale_y_repite":1.0,
+										"scale_x_repite":1.0
+									}									
+								},
+								{
+									"type":"change_position",
+									"name_object":"Graf_9_name",
+									"type_button":"lift",
+
+									"setting":{
+										"x_new_repite":0.0,
+										"y_new_repite":0.9,
+										"z_new_repite":-0.5,
+										"scale_y_repite":0.065,
+										"scale_x_repite":0.45
+									}
+								},
+								{
+								
+									"type":"change_position",
+									"name_object":"inerf_graf",
+									"type_button":"lift",
+
+									"setting":{
+										"z_repite":-0.3
+									}		
+								}
+							],
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Литий-ионный аккумулятор"
+						},
+						{
+							"name":"Graf_10_name",
+							"list":"list_1",
+							"type":"CeBottom",
+
+							"funs_object_change":[
+								{
+									"type":"change_position",
+									"name_object":"Graf_10",
+									"type_button":"lift",
+
+									"setting":{
+										"x_new_repite":0.0,
+										"y_new_repite":0.0,
+										"z_new_repite":-0.4,
+										"scale_y_repite":1.0,
+										"scale_x_repite":1.0
+									}									
+								},
+								{
+									"type":"change_position",
+									"name_object":"Graf_10_name",
+									"type_button":"lift",
+
+									"setting":{
+										"x_new_repite":0.0,
+										"y_new_repite":0.9,
+										"z_new_repite":-0.5,
+										"scale_y_repite":0.065,
+										"scale_x_repite":0.45
+									}
+								},
+								{
+								
+									"type":"change_position",
+									"name_object":"inerf_graf",
+									"type_button":"lift",
+
+									"setting":{
+										"z_repite":-0.3
+									}		
+								}
+							],
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Водородный накопитель"
+						},
+						{
+							"name":"Graf_11_name",
+							"list":"list_1",
+							"type":"CeBottom",
+
+							"funs_object_change":[
+								{
+									"type":"change_position",
+									"name_object":"Graf_11",
+									"type_button":"lift",
+
+									"setting":{
+										"x_new_repite":0.0,
+										"y_new_repite":0.0,
+										"z_new_repite":-0.4,
+										"scale_y_repite":1.0,
+										"scale_x_repite":1.0
+									}									
+								},
+								{
+									"type":"change_position",
+									"name_object":"Graf_11_name",
+									"type_button":"lift",
+
+									"setting":{
+										"x_new_repite":0.0,
+										"y_new_repite":0.9,
+										"z_new_repite":-0.5,
+										"scale_y_repite":0.065,
+										"scale_x_repite":0.45
+									}
+								},
+								{
+								
+									"type":"change_position",
+									"name_object":"inerf_graf",
+									"type_button":"lift",
+
+									"setting":{
+										"z_repite":-0.3
+									}		
+								}
+							],
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Система солнечного теплоснабж."
+						},
+						{
+							"name":"Graf_12_name",
+							"list":"list_1",
+							"type":"CeBottom",
+
+							"funs_object_change":[
+								{
+									"type":"change_position",
+									"name_object":"Graf_12",
+									"type_button":"lift",
+
+									"setting":{
+										"x_new_repite":0.0,
+										"y_new_repite":0.0,
+										"z_new_repite":-0.4,
+										"scale_y_repite":1.0,
+										"scale_x_repite":1.0
+									}									
+								},
+								{
+									"type":"change_position",
+									"name_object":"Graf_12_name",
+									"type_button":"lift",
+
+									"setting":{
+										"x_new_repite":0.0,
+										"y_new_repite":0.9,
+										"z_new_repite":-0.5,
+										"scale_y_repite":0.065,
+										"scale_x_repite":0.45
+									}
+								},
+								{
+								
+									"type":"change_position",
+									"name_object":"inerf_graf",
+									"type_button":"lift",
+
+									"setting":{
+										"z_repite":-0.3
+									}		
+								}
+							],
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"Система накопления тепла"
+						}
+					]
+				},
+				{
+					"name":"GEC-graf_graf",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"them":"",
+					"path_image":"DLC/pictures/querty_white.png",
+					
+					"array_setting":{
+						"scale_y_start":0.45,
+						"scale_x_start":0.4,
+						
+						"x_start":-0.72,
+						"y_start":0.66,
+						"z_start":-0.2,
+						
+						"x_offset":0.48,
+						"y_offset":-0.62,
+						"collum_cout":4
+					},
+					
+					"list_object":[
+						{
+							"name":"Graf_1",
+							"list":"list_1",
+							"type":"CeGraphics",
+
+							
+							"Setting_axis":[
+								{
+								"type":1,
+								"font":"fonts/verdana.ttf",
+								"name_axis":"t, секунд",
+								"cout_divisions":6,
+								"accurate":0
+								},
+								{
+								"type":0,
+								"font":"fonts/verdana.ttf",
+								"name_axis":"Вт",
+								"cout_divisions":6,
+								"accurate":0
+								}
+							],
+
+							"id":"PEE",
+							
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_grafics_win"
+								}
+							],
+
+							"them":""
+						},
+						{
+							"name":"Graf_2",
+							"list":"list_1",
+							"type":"CeGraphics",
+
+							
+							"Setting_axis":[
+								{
+								"type":1,
+								"font":"fonts/verdana.ttf",
+								"name_axis":"t, секунд",
+								"cout_divisions":6,
+								"accurate":0
+								},
+								{
+								"type":0,
+								"font":"fonts/verdana.ttf",
+								"name_axis":"Вт",
+								"cout_divisions":6,
+								"accurate":0
+								}
+							],
+							
+							
+							"id":"PTE",
+							
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_grafics_win"
+								}
+							],
+
+							"them":""
+						},
+						{
+							"name":"Graf_3",
+							"list":"list_1",
+							"type":"CeGraphics",
+
+							
+							"Setting_axis":[
+								{
+								"type":1,
+								"font":"fonts/verdana.ttf",
+								"name_axis":"t, секунд",
+								"cout_divisions":6,
+								"accurate":0
+								},
+								{
+								"type":0,
+								"font":"fonts/verdana.ttf",
+								"name_axis":"Вт",
+								"cout_divisions":6,
+								"accurate":0
+								}
+							],
+														
+							"id":"PMT",
+							
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_grafics_win"
+								}
+							],
+							"them":""
+						},
+						{
+							"name":"Graf_4",
+							"list":"list_1",
+							"type":"CeGraphics",
+
+							
+							"Setting_axis":[
+								{
+								"type":1,
+								"font":"fonts/verdana.ttf",
+								"name_axis":"t, секунд",
+								"cout_divisions":6,
+								"accurate":0
+								},
+								{
+								"type":0,
+								"font":"fonts/verdana.ttf",
+								"name_axis":"Вт",
+								"cout_divisions":6,
+								"accurate":0
+								}
+							],
+							"id":"VEU_V",
+							
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_grafics_win"
+								}
+							],
+							
+							"them":""
+						},
+						{
+							"name":"Graf_5",
+							"list":"list_1",
+							"type":"CeGraphics",
+
+							
+							"Setting_axis":[
+								{
+								"type":1,
+								"font":"fonts/verdana.ttf",
+								"name_axis":"t, секунд",
+								"cout_divisions":6,
+								"accurate":0
+								},
+								{
+								"type":0,
+								"font":"fonts/verdana.ttf",
+								"name_axis":"Вт",
+								"cout_divisions":6,
+								"accurate":0
+								}
+							],
+							
+							"id":"GEU",
+							
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_grafics_win"
+								}
+							],
+							
+							"them":""
+						},
+						{
+							"name":"Graf_6",
+							"list":"list_1",
+							"type":"CeGraphics",
+
+							
+							"Setting_axis":[
+								{
+								"type":1,
+								"font":"fonts/verdana.ttf",
+								"name_axis":"t, секунд",
+								"cout_divisions":6,
+								"accurate":0
+								},
+								{
+								"type":0,
+								"font":"fonts/verdana.ttf",
+								"name_axis":"Вт",
+								"cout_divisions":6,
+								"accurate":0
+								}
+							],
+														
+							"id":"DIESEL_GENERATOR",
+							
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_grafics_win"
+								}
+							],
+							
+							"them":""
+						},
+						{
+							"name":"Graf_7",
+							"list":"list_1",
+							"type":"CeGraphics",
+
+							
+							"Setting_axis":[
+								{
+								"type":1,
+								"font":"fonts/verdana.ttf",
+								"name_axis":"t, секунд",
+								"cout_divisions":6,
+								"accurate":0
+								},
+								{
+								"type":0,
+								"font":"fonts/verdana.ttf",
+								"name_axis":"Вт",
+								"cout_divisions":6,
+								"accurate":0
+								}
+							],
+														
+							"id":"GAS",
+							
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_grafics_win"
+								}
+							],
+							
+							"them":""
+						},
+						{
+							"name":"Graf_8",
+							"list":"list_1",
+							"type":"CeGraphics",
+
+							
+							"Setting_axis":[
+								{
+								"type":1,
+								"font":"fonts/verdana.ttf",
+								"name_axis":"t, секунд",
+								"cout_divisions":6,
+								"accurate":0
+								},
+								{
+								"type":0,
+								"font":"fonts/verdana.ttf",
+								"name_axis":"Вт",
+								"cout_divisions":6,
+								"accurate":0
+								}
+							],
+														
+							"id":"SUPERCAPACITOR",
+							
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_grafics_win"
+								}
+							],
+							
+							"them":""
+						},
+						{
+							"name":"Graf_9",
+							"list":"list_1",
+							"type":"CeGraphics",
+
+							
+							"Setting_axis":[
+								{
+								"type":1,
+								"font":"fonts/verdana.ttf",
+								"name_axis":"t, секунд",
+								"cout_divisions":6,
+								"accurate":0
+								},
+								{
+								"type":0,
+								"font":"fonts/verdana.ttf",
+								"name_axis":"Вт",
+								"cout_divisions":6,
+								"accurate":0
+								}
+							],
+														
+							"id":"BATTARY_BLOCK",
+							
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_grafics_win"
+								}
+							],
+							
+							"them":""
+						},
+						{
+							"name":"Graf_10",
+							"list":"list_1",
+							"type":"CeGraphics",
+
+							
+							"Setting_axis":[
+								{
+								"type":1,
+								"font":"fonts/verdana.ttf",
+								"name_axis":"t, секунд",
+								"cout_divisions":6,
+								"accurate":0
+								},
+								{
+								"type":0,
+								"font":"fonts/verdana.ttf",
+								"name_axis":"Вт",
+								"cout_divisions":6,
+								"accurate":0
+								}
+							],
+														
+							"id":"VSAE",
+							
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_grafics_win"
+								}
+							],
+							
+							"them":""
+						},
+						{
+							"name":"Graf_11",
+							"list":"list_1",
+							"type":"CeGraphics",
+
+							
+							"Setting_axis":[
+								{
+								"type":1,
+								"font":"fonts/verdana.ttf",
+								"name_axis":"t, секунд",
+								"cout_divisions":6,
+								"accurate":0
+								},
+								{
+								"type":0,
+								"font":"fonts/verdana.ttf",
+								"name_axis":"Вт",
+								"cout_divisions":6,
+								"accurate":0
+								}
+							],
+														
+							"id":"CCT",
+							
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_grafics_win"
+								}
+							],
+							
+							"them":""
+						},
+						{
+							"name":"Graf_12",
+							"list":"list_1",
+							"type":"CeGraphics",
+
+							
+							"Setting_axis":[
+								{
+								"type":1,
+								"font":"fonts/verdana.ttf",
+								"name_axis":"t, секунд",
+								"cout_divisions":6,
+								"accurate":0
+								},
+								{
+								"type":0,
+								"font":"fonts/verdana.ttf",
+								"name_axis":"Вт",
+								"cout_divisions":6,
+								"accurate":0
+								}
+							],
+														
+							"id":"NTE",
+							
+							"funs_dll":[
+								{
+								"type":"out_data",
+								"name_shared_lib":"DLC\\libGEC.dll",
+								"name_fun":"set_grafics_win"
+								}
+							],
+							
+							"them":""
+						}
+					]
+				}
+			]
+		}
+	]
+}

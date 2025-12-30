@@ -1,0 +1,205 @@
+{
+	"name_win":"name_win_",
+	
+	"list_object":[
+		{
+			"name":"666",
+			"list":"list_1",
+			"type":"CeBottom",
+			
+			"x":-0.3,
+			"y":-10000.8,
+			"z":-0.4,
+			
+			"scale_x":0.4,
+			"scale_y":0.2,
+			
+			"them":"",
+			"font":"fonts/verdana.ttf",
+			"text":" "
+		},
+		{
+			"name":"input_nte",
+			"list":"list_1",
+			"type":"CeBoxElement",
+
+			"x":1000.0,
+			"y":0.0,
+			"z":-0.9,
+			"scale_x":1.2,
+			"scale_y":1.7,
+			"scale_z":1.0,
+
+			"them":"",
+			"path_image":"DLC/pictures/jjj1.png",
+
+			"list_object":[
+				{
+					"name":"name_input_nte",
+					"list":"list_1",
+					"type":"CeTextField",
+
+					"x":-0.4,
+					"y":0.4,
+					"z":0.0,
+					"scale_x":0.1,
+					"scale_y":0.1,
+					"scale_z":1.0,
+					
+					
+					"them":"",
+					"font":"fonts/verdana.ttf",
+					"text":"Система накопления тепла"
+				},
+				{
+				
+					"name":"close_input_nte",
+					"list":"list_1",
+					"type":"CeBottom",
+
+					"x":0.448,
+					"y":0.42,
+					"z":-0.1,
+					"scale_x":0.06,
+					"scale_y":0.08,
+					"scale_z":1.0,
+					
+					"funs_object_change":[
+						{
+							"type":"change_position",
+							"name_object":"input_nte",
+							"type_button":"lift",
+
+							"setting":{
+								"x_repite":-1000.0
+							}		
+						}
+					],
+					
+					"them":"",
+					"font":"fonts/verdana.ttf",
+					"path_image":"DLC/pictures/closed.png",
+					"text":" "
+				},
+				{
+					"name":"input_nte_name_parametrs",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"x":-0.15,
+					"y":-0.05,
+					"z":0.0,
+					"scale_x":0.55,
+					"scale_y":0.65,
+					"scale_z":1.0,
+
+					"them":"",
+					"path_image":"DLC/pictures/querty_white.png",
+					
+					"array_setting":{
+						"scale_y_start":0.065,
+						"scale_x_start":1.0,
+						"x_start":-0.04,
+						"y_start":0.45,
+						"y_offset":-0.068
+					},
+					
+					"list_object":[
+						{
+							"name":"KPD_NTE",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"КПД"
+						}		
+					]
+				},
+				{
+					"name":"input_nte_parametrs",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"x":0.2,
+					"y":-0.05,
+					
+					"scale_x":0.12,
+					"scale_y":0.65,
+					"scale_z":1.0,
+
+					"them":"",
+					"path_image":"DLC/pictures/querty_white.png",
+					
+					"array_setting":{
+						"scale_y_start":0.065,
+						"scale_x_start":1.0,
+						"y_start":0.45,
+						"y_offset":-0.068
+					},
+					
+					"list_object":[
+					{
+							"name":"KPD_NTE_input",
+							"list":"list_1",
+							"type":"CeInputText",
+							
+							"funs_dll":[
+								{
+									"type":"in_data",
+									"name_shared_lib":"DLC\\libGEC.dll",
+									"name_fun":"set_data_interface"
+								}
+							],
+
+							"namber_setting":{
+								"min":0.0,
+								"max":1.0,
+								"accurate":3
+							},
+							
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"00000.00"
+						}				
+					]
+				},
+				{
+					"name":"input_nte_measure_unit",
+					"list":"list_1",
+					"type":"CeBoxElement",
+
+					"x":0.325,
+					"y":-0.05,
+					"z":0.0,
+					"scale_x":0.12,
+					"scale_y":0.65,
+					"scale_z":1.0,
+
+					"them":"",
+					"path_image":"DLC/pictures/querty_white.png",
+					
+					"array_setting":{
+						"scale_y_start":0.065,
+						"scale_x_start":1.0,
+						"x_start":-0.04,
+						"y_start":0.45,
+						"y_offset":-0.068
+					},
+					
+					"list_object":[
+						{
+							"name":"KPD_NTE_measure_unit",
+							"list":"list_1",
+							"type":"CeTextField",
+
+							"them":"",
+							"font":"fonts/verdana.ttf",
+							"text":"о.е"
+						}			
+					]
+				}
+			]
+		}
+	]	
+}
